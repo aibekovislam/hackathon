@@ -1,0 +1,118 @@
+/* .black{
+    background-color: black;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+.navbar__items{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item{
+    list-style-type: none;
+}
+.sign_in_btn{
+    border: none;
+    padding: 10px 25px 10px 25px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgba(13, 58, 86, 1);
+}
+.language_btn button{
+    border: 3px solid white;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    background-color: initial;
+    margin-right: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.language_btn svg{
+    margin: 0 5px;
+}
+
+.mainBlock{
+    background-image: url('../static/finishhhhh\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homePageBlock{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.homePageBlockItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 110px;
+}
+.homePageBlockTitle{
+    margin: 0;
+    height: auto;
+}
+.homePageBlockTitle h1{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 65px;
+    text-align: center;
+    line-height: 65px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.homePageBlockText p{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+.homePageBlockText2 p{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0px 10px 0px;
+}
+.homePageBlockInput input{
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding-left: 23px;
+}
+.homePageBlockInput button{
+    width: 150px;
+    height: 52px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: none;
+    color: white;
+    background-color: rgba(13, 58, 86, 1);
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
