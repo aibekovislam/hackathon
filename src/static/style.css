@@ -1,0 +1,46 @@
+.black{
+    background-color: black;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+.navbar__items{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item{
+    list-style-type: none;
+}
+.sign_in_btn{
+    border: none;
+    padding: 10px 25px 10px 25px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgba(13, 58, 86, 1);
+}
+.language_btn button{
+    border: 3px solid white;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    background-color: initial;
+    margin-right: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.language_btn svg{
+    margin: 0 5px;
+}
