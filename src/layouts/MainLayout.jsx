@@ -5,10 +5,16 @@ import '../static/style.css'
 
 function MainLayout() {
   return (
-    <div className='mainBlock'>
-      <Navbar/>
-      <Outlet/>
-    </div>
+    <>
+      <div className="mainBlock">
+        <Navbar/>
+        <Outlet/>
+      </div>
+      <div className='mainBlockMobile'>
+        <Navbar/>
+        <Outlet/>
+      </div>
+    </>
   )
 }
 
