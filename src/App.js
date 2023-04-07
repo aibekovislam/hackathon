@@ -2,9 +2,7 @@ import MainRoutes from "./routes/MainRoutes";
 import '../src/static/style.css'
 
 function App() {
-  return (
-    <MainRoutes/>
-  );
+  return <MainRoutes />;
 }
 
 export default App;
