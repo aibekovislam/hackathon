@@ -1,0 +1,276 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (max-width: 1900px) {
+    .mobile{
+        display: none;
+    }
+    .mainBlockMobile{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .mobile{
+        display: none;
+    }
+    .mainBlockMobile{
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .mobile{
+        display: none;
+    }
+    .mainBlockMobile{
+        display: none;
+    }
+}
+
+@media (max-width: 776px) {
+    .mobile{
+        display: none;
+    }
+    .mainBlockMobile{
+        display: none;
+    }
+}
+
+@media (max-width: 450px){
+    .pc{
+        display: none;
+    }
+    .mainBlock{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .mainBlockMobile{
+        display: block;
+    }
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+.navbar__items{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 23px;
+}
+.navbar__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item{
+    list-style-type: none;
+}
+.sign_in_btn{
+    border: none;
+    padding: 10px 25px 10px 25px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgba(13, 58, 86, 1);
+}
+.language_btn button{
+    border: 3px solid white;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    background-color: initial;
+    margin-right: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.language_btn svg{
+    margin: 0 5px;
+}
+
+.mainBlock{
+    background-image: url('../static/finishhhhh\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+} 
+
+.homePageBlock{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.homePageBlockItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 110px;
+}
+.homePageBlockTitle{
+    margin: 0;
+    height: auto;
+}
+.homePageBlockTitle h1{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 65px;
+    text-align: center;
+    line-height: 65px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.homePageBlockText p{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+.homePageBlockText2 p{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0px 10px 0px;
+}
+.homePageBlockInput input{
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding-left: 23px;
+}
+.homePageBlockInput button{
+    width: 150px;
+    height: 52px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: none;
+    color: white;
+    background-color: rgba(13, 58, 86, 1);
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbarMobile{
+    width: 100%;
+    background-color: black;
+}
+.navbarMobile__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.navbarMobile__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+}
+.navbarMobile__item button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: rgba(13, 58, 86, 1);
+    font-weight: 600;
+}
+.mobileHomePageBlock{
+    background-image: url('../static/finishhhhh\ 1.png');
+    /* background-color: black; */
+    width: 100%;
+    height: 850px;
+}
+.mobileHomePageBlock__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 170px;
+}
+.mobileHomePageBlock__title h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 50px;
+}
+.mobileHomePageBlock__inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.watchP{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+.readyP{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 17px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.inputs{
+    width: 100%;
+}
+.inputs input{
+    width: 220px;
+    height: 50px;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding-left: 10px;
+}
+
+.inputs input:focus{
+    border: none;
+    outline: none;
+}
+.inputs button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: rgba(13, 58, 86, 1);
+    font-weight: bold;
+}
