@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.css";
+import "../static/footer.css";
 import fb from "../static/fbimg.png";
 import twitter from "../static/twitterimg.png";
 import instagram from "../static/instagramimg.png";
@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="footer">
       <div className="sb__footer section__padding">
         <div className="sb__footer-links">
-          <div className="sb__footer-links-div">
+          <div className="sb__footer-links_div">
             <h4>For Business</h4>
             <a href="/employer">
               <p>Employer</p>
@@ -22,7 +22,7 @@ const Footer = () => {
               <p>Individual</p>
             </a>
           </div>
-          <div className="sb__fotter-links_div">
+          <div className="sb__footer-links_div">
             <h4>Resources</h4>
             <a href="/resource">
               <p>Resource Center</p>
@@ -78,7 +78,9 @@ const Footer = () => {
 
         <div className="sb__footer-below">
           <div className="sb__footer-copyright">
-            <p>@{new Date().getFullYear()} CodeInn. All right reserved</p>
+            <p>
+              @{new Date().getFullYear().toString()} CodeInn. All right reserved
+            </p>
           </div>
           <div className="sv__footer-below-links">
             <a href="/terms">
