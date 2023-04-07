@@ -8,8 +8,15 @@ function SignPage() {
       <div className="SignInCard">
         <div className="inputs">
           <h1 className="SignInTitle">Sign In</h1>
-          <TextField id="filled-basic" label="Email" variant="filled" />
           <TextField
+            id="filled-basic"
+            className="whiteInput"
+            label="Email"
+            sx={{ label: { color: "white" } }}
+            variant="filled"
+          />
+          <TextField
+            sx={{ label: { color: "white" } }}
             id="filled-basic"
             label="Password"
             variant="filled"
