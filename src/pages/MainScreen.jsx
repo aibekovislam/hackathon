@@ -1,10 +1,16 @@
 import React from 'react'
+import MoviesList from '../components/MoviesList'
 
 function MainScreen() {
   return (
-    <div>
-        <h1>Hello</h1>
-    </div>
+    <>
+        <div className='pc'>
+            <MoviesList/>
+        </div>
+        <div className='mobile'>
+            <h1>Hello mobile</h1>
+        </div>
+    </>
   )
 }
 
