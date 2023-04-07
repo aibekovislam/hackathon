@@ -7,8 +7,10 @@ import SignPage from '../pages/SignPage'
 function MainRoutes() {
   return (
     <Routes>
-        <Route path='/' element={<HomePage/>}></Route>
-        <Route path='/signin' element={<SignPage/>}></Route>
+        <Route element={<MainLayout/>}>
+          <Route path='/' element={<HomePage/>}></Route>
+          <Route path='/signin' element={<SignPage/>}></Route>
+        </Route>
     </Routes>
   )
 }
