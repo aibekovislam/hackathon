@@ -28,6 +28,7 @@ function FilmContext({ children }) {
   async function getMovies() {
     try {
         const res = await axios.get(API);
+        console.log(res);
         dispatch({
             type: ACTIONS.movies,
             payload: res.data

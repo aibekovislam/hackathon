@@ -13,9 +13,6 @@ function MoviesList() {
         return(
           <>
             <h1>{item.title}</h1>
-            <p>{item.year}</p>
-            <p>{item.director}</p>
-            <img src={item.posterUrl} />
           </>
         )
       }) }
