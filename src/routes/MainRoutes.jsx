@@ -11,7 +11,9 @@ function MainRoutes() {
         <Route element={<MainLayout/>}>
           <Route path='/' element={<HomePage/>}></Route>
         </Route>
-        <Route path='/main' element={<MainScreen/>}/>
+        
+          <Route path='/main' element={<MainScreen/>}/>
+        
     </Routes>
   );
 }
