@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.parent{
+    background-color: rgb(6, 9, 22);
+    padding-bottom: 30px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.navbar__itemsMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+}
+.navbar__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbarItemOne{
+    width: 700px;
+}
+
+.navbar__item__nav{
+    width: 500px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation li{
+    list-style-type: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbarInMainScreen{
+    background-color: rgb(6, 8, 17);
+    /* background-color: transparent; */
+    padding: 20px;
+}
+.searchInput{
+    padding-left: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: rgb(15, 22, 53);
+}
+.searchInput:focus{
+    outline: none;
+}
+.backgroundImageInMainScreen{
+    background-color: rgb(7, 10, 23);
+
+    width: 100%;
+    height: 500px;
+}
+
+.signIn{
+    padding: 10px 30px 10px 30px;
+    margin-left: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: initial;
+    color: white;
+    font-weight: 700;
+}
+.signUp{
+    padding: 10px 30px 10px 30px;
+    margin-left: 10px;
+    border-radius: 8px;
+    background-color: initial;
+    color: white;
+    font-weight: 700;
+    border: 3px solid white;
+}
+
+.blockTitles{
+    margin-top: 33px;
+    margin-bottom: 23px;
+}
+
+.blockTitles span{
+    color: white;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.blockFilm{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    border-radius: 9px;
+    position: relative;
+}
+.blockFilm img{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    border-radius: 8px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.blackShadow{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg,transparent,black);
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.blackShadowTitle{
+    color: white;
+    padding-left: 100px;
+    padding-top: 50px;
+    font-size: 80px;
+}
+.blackShadowText{
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.blockFilter{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.blockFilter__items{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.blockFilter__items button{
+    padding: 8px 25px 8px 25px;
+    background-color: initial;
+    border: 3px solid white;
+    color: white;
+    border-radius: 100px;
+}
+
+.mainMoviesTitle{
+    font-size: 33px;
+    color: white;
+    margin-bottom: 30px;
+}
+.mainMoviesList{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.cards{
+    width: 200px;
+    height: 250px;
+    border-radius: 8px;
+    margin-right: 13px;
+    margin-bottom: 190px;
+}
+
+.mainMoviesIMG{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cards__title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: normal;
+}
+.subscribe{
+    margin-top: 10px;
+    color: rgb(255, 0, 43);;
+}

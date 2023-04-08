@@ -2,7 +2,7 @@
     "movies": [
         {
             "id": 1,
-            "title": "Black Panther Wakanda Forever",
+            "title": "Black Panther 2",
             "date": "October 26, 2022",
             "category": [
                 "Action",
@@ -10,11 +10,11 @@
             ],
             "description": "At first glance, you might think that Wakanda is the usual territory of wild Africa, but this is not so. Here, in the bowels of the desert lands, there are deposits of a unique metal that can absorb vibrations.",
             "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BNTM4NjIxNmEtYWE5NS00NDczLTkyNWQtYThhNmQyZGQzMjM0XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg",
-            "background": "blob:https://www.figma.com/790e9322-df47-4415-ac0e-138edf39c7e4"
+            "background": "./src/static/panther (2).png"
         },
         {
             "id": 2,
-            "title": "Kung-fu panda 3 Reunion with father",
+            "title": "Kung-fu panda 3",
             "date": "October 26, 2022",
             "category": [
                 "Animation",
@@ -22,7 +22,7 @@
             ],
             "description": "At first glance, you might think that Wakanda is the usual territory of wild Africa, but this is not so. Here, in the bowels of the desert lands, there are deposits of a unique metal that can absorb vibrations.",
             "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BMTUyNzgxNjg2M15BMl5BanBnXkFtZTgwMTY1NDI1NjE@._V1_.jpg",
-            "background": "blob:https://www.figma.com/84c77db1-7b40-4294-bb65-06a720caf85a"
+            "background": "./src/static/kung fu panda (1).png"
         },
         {
             "id": 3,
@@ -34,7 +34,7 @@
             ],
             "description": "The film is set at the end of World War II in Nazi Germany. A group of American soldiers are planning a daring military operation.",
             "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BMjA4MDU0NTUyN15BMl5BanBnXkFtZTgwMzQxMzY4MjE@._V1_.jpg",
-            "background": "blob:https://www.figma.com/ada9da9e-e28e-416e-a68e-9eb0ee34aaef"
+            "background": "./src/static/maket.png"
         },
         {
             "id": 4,
@@ -46,19 +46,19 @@
             ],
             "description": "CYBERPUNK: EDGERUNNERS TELLS A STANDALONE, 10-EPISODE STORY ABOUT A STREET KID TRYING TO SURVIVE IN A TECHNOLOGY AND BODY MODIFICATION-OBSESSED CITY OF THE FUTURE.",
             "posterIMAGE": "https://pbs.twimg.com/media/FUs-apUXoAEEnFF?format=jpg&name=900x900",
-            "background": "blob:https://www.figma.com/c48ba393-aa29-4418-b97f-f9f7289a83e8"
+            "background": "./src/static/Сyberpunk.png"
         },
         {
             "id": 5,
-            "title": "Cyberpunk",
-            "date": "October 26, 2022",
+            "title": "John Wick 4",
+            "date": "March 24, 2023",
             "category": [
-                "Sub-genre",
+                "Neo-noir",
                 "Action"
             ],
-            "description": "CYBERPUNK: EDGERUNNERS TELLS A STANDALONE, 10-EPISODE STORY ABOUT A STREET KID TRYING TO SURVIVE IN A TECHNOLOGY AND BODY MODIFICATION-OBSESSED CITY OF THE FUTURE.",
-            "posterIMAGE": "https://pbs.twimg.com/media/FUs-apUXoAEEnFF?format=jpg&name=900x900",
-            "background": "blob:https://www.figma.com/c48ba393-aa29-4418-b97f-f9f7289a83e8"
+            "description": "With the price on his head ever increasing, legendary hit man John Wick takes his fight against the High Table global as he seeks out the most powerful players in the underworld, from New York to Paris to Japan to Berlin.",
+            "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BMDExZGMyOTMtMDgyYi00NGIwLWJhMTEtOTdkZGFjNmZiMTEwXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_.jpg",
+            "background": "https://static01.nyt.com/images/2023/03/26/multimedia/john-wick-anatomy-zphl/john-wick-anatomy-zphl-videoSixteenByNine3000.jpg"
         }
     ]
 }
