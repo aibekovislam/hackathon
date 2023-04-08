@@ -87,11 +87,11 @@
   background-color: rgba(13, 58, 86, 1);
 }
 .language_btn button {
-  border: 3px solid white;
+  border: 3px solid #04121b;
   width: 100px;
   height: 40px;
   border-radius: 8px;
-  color: white;
+  color: #04121b;
   background-color: initial;
   margin-right: 13px;
   display: flex;
@@ -102,10 +102,7 @@
   margin: 0 5px;
 }
 
-.mainBlock {
-  background-image: url("../static/finishhhhh\ 1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.pc {
   height: 750px;
 }
 
@@ -173,11 +170,10 @@
   justify-content: space-around;
   align-items: center;
 }
-.navbarMobile {
+.mobile {
   width: 100%;
-  background-color: black;
 }
-.navbarMobile__items {
+/* .navbarMobile__items {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -200,7 +196,6 @@
 }
 .mobileHomePageBlock {
   background-image: url("../static/finishhhhh\ 1.png");
-  /* background-color: black; */
   width: 100%;
   height: 850px;
 }
@@ -270,4 +265,4 @@
   color: white;
   background-color: rgba(13, 58, 86, 1);
   font-weight: bold;
-}
+} */

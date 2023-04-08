@@ -4,10 +4,13 @@
 /* * {
   margin: 0 auto;
 } */
+
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-image: url("../static/blur.png") !important; */
+  /* height: 1000px; */
 }
 .SignInCard {
   display: flex; /* задаем контейнеру flex-контейнер */
@@ -25,7 +28,7 @@
   backdrop-filter: blur(3px);
   color: white;
 }
-.inputs {
+.myinputs {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +41,7 @@
   width: 140px;
 }
 .Next {
-  width: 200px;
+  width: 235px;
   height: 30px;
   background-color: rgb(41, 93, 125);
   color: #fff;
@@ -50,6 +53,10 @@
   justify-content: space-between;
   font-size: 14px;
 }
-.whiteInput{
-    color: white;
+#filled-basic {
+  color: white;
+  background-color: rgb(114, 111, 111);
+  height: 10px;
+  width: 210px;
+  border-radius: 5px;
 }

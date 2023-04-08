@@ -4,31 +4,33 @@ import "../static/baielSignIn.css";
 
 function SignPage() {
   return (
-    <div className="card">
-      <div className="SignInCard">
-        <div className="inputs">
-          <h1 className="SignInTitle">Sign In</h1>
-          <TextField
-            id="filled-basic"
-            className="whiteInput"
-            label="Email"
-            sx={{ label: { color: "white" } }}
-            variant="filled"
-          />
-          <TextField
-            sx={{ label: { color: "white" } }}
-            id="filled-basic"
-            label="Password"
-            variant="filled"
-          />
-          <button className="Next">Next</button>
-          <div className="ThirdInput">
-            <input type="checkbox" />
-            <h4>Please do not send me special orders</h4>
+    <>
+      <div className="card">
+        <div className="SignInCard">
+          <div className="myinputs">
+            <h1 className="SignInTitle">Sign In</h1>
+            <TextField
+              id="filled-basic"
+              className="whiteInput"
+              label="Email"
+              sx={{ label: { color: "white" }, color: "red!important" }}
+              variant="filled"
+            />
+            <TextField
+              sx={{ label: { color: "white" } }}
+              id="filled-basic"
+              label="Password"
+              variant="filled"
+            />
+            <button className="Next">Next</button>
+            <div className="ThirdInput">
+              <input type="checkbox" />
+              <h4>Please do not send me special orders</h4>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
