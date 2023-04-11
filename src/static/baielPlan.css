@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Nunito+Sans:wght@400;600;700&family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Nunito+Sans:wght@400;600;700&family=Open+Sans:wght@300;700&display=swap");
+
+.textBox {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 15px;
+  font-family: "Open Sans";
+  line-height: 25px;
+}
+.Title {
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+}
+.Subtitle {
+  font-size: 15px;
+  font-family: "Inter";
+  font-style: normal;
+}
+.cardContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+.card_usdTwo {
+  width: 200px;
+  height: 330px;
+  background-color: rgba(4, 18, 27, 0.65);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  content: "";
+  position: absolute;
+  backdrop-filter: blur(5px);
+}
+.card_usdTwo:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+/* .hat {
+  width: 200px;
+  height: 330px;
+  background-color: rgba(214, 201, 224, 0.74);
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+} */
+.card_usd {
+  width: 200px;
+  height: 330px;
+  background-color: rgba(214, 201, 224, 0.74);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  content: "";
+  backdrop-filter: blur(3px);
+}
+.card_usd:hover {
+  transform: translateY(-15px) scale(1.05); /* Поднимаем карточку на 5 пикселей */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+  transition: all 0.3s ease; /* Добавляем плавный переход */
+}
+.h3 {
+  color: #04121b;
+}
+.h2 {
+  color: rgba(11, 48, 70, 1);
+}
+.h3Two {
+  color: #fff;
+}
+/* #cardSecond_usd :nth-child(2) {
+  background-color: rgba(4, 18, 27, 0.81);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+    width: 200px;
+  height: 330px;
+} */
+
+.ul_usd {
+  margin-top: 15px;
+  list-style: none;
+}
+
+.ul_usd li:before {
+  content: "✓";
+  margin-right: 4px;
+  color: rgba(63, 128, 142, 1);
+}
+.li {
+  margin-top: 5px;
+  margin-right: 55px;
+  font-size: smaller;
+}
+.liTwo {
+  color: rgba(255, 255, 255, 1);
+  margin-right: 55px;
+  margin-top: 5px;
+  font-size: smaller;
+}
+.btn {
+  padding: 10px 25px 10px 25px;
+  border-radius: 8px;
+  border: none;
+  background-color: #04121b;
+  color: #bfbfbf;
+  margin-top: 40px;
+}
+.btnTwo {
+  padding: 10px 25px 10px 25px;
+  border-radius: 8px;
+  border: none;
+  color: #04121b;
+  background-color: #bfbfbf;
+  margin-top: 35px;
+  margin-left: 20px;
+  /* margin-bottom: 35px; */
+}

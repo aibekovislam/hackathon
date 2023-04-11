@@ -18,7 +18,7 @@ function Navbar() {
                         </div>
                         <ul className='navbar__item'>
                             <li className='item'>
-                                <div className='language_btn'>
+                                <div className='language_btn' id="baiel_btn">
                                     <button>
                                         <DropDownSvg/>
                                             English
