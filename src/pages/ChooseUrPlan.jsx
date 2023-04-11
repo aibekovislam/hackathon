@@ -19,7 +19,7 @@ function ChooseUrPlan() {
                 <h3 className="h3">Week</h3>
                 <h2 className="h2">$5</h2>
               </div>
-              <ul className="ul_usd">
+              <ul className="ul_usd"> 
                 <li className="li">Unlimited Watch</li>
                 <li className="li">Pay movies</li>
                 <li className="li">Own catalogue</li>

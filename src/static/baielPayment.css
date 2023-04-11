@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Inter:wght@200&family=Nunito+Sans:wght@400;600;700&family=Open+Sans:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;400&family=Inter:wght@200&family=Nunito+Sans:wght@400;600;700&family=Open+Sans:wght@300;700&display=swap");
 
 * {
   margin: 0;
@@ -57,36 +59,36 @@
   }
 }
 
-.navbar {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 1200px;
   margin: 0 auto;
 }
-.navbar__items {
+.navbar__it {
   width: 1100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 23px;
 }
-.navbar__item {
+.navbar__i {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.item {
+.i {
   list-style-type: none;
 }
-.sign_in_btn {
+.sign {
   border: none;
   padding: 10px 25px 10px 25px;
   border-radius: 8px;
   color: white;
   background-color: rgba(13, 58, 86, 1);
 }
-.language_btn button {
+.language button {
   border: 3px solid #04121b;
   width: 100px;
   height: 40px;
@@ -98,15 +100,15 @@
   justify-content: space-between;
   align-items: center;
 }
-.language_btn svg {
+.language svg {
   margin: 0 5px;
 }
 
-.pc {
+/* .pc {
   height: 750px;
-}
+} */
 
-.homePageBlock {
+/* .homePageBlock {
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 50px;
@@ -172,7 +174,7 @@
 }
 .mobile {
   width: 100%;
-}
+}  */
 /* .navbarMobile__items {
   display: flex;
   justify-content: space-between;
@@ -266,3 +268,143 @@
   background-color: rgba(13, 58, 86, 1);
   font-weight: bold;
 } */
+
+.containerPayment {
+  font-family: "Cairo", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  text-align: center;
+  line-height: 2;
+}
+.choosehowtopay :first-child(h4) {
+  display: flex;
+  margin-top: 15px;
+}
+.textSecond {
+  margin-top: 15px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.blob.grey {
+  background: #d7d7d7;
+  box-shadow: inset 0px 3.29715px 21.4315px rgba(105, 105, 105, 0.38);
+  animation: pulse-grey 2s infinite;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 50px;
+  height: 50px;
+  margin-left: 215px;
+}
+
+@keyframes pulse-grey {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(119, 115, 115, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+#creditcard {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-style: groove;
+  border-radius: 10px;
+}
+span {
+  margin: 10px;
+}
+
+/* third page css */
+/* #animContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} */
+#animContainer {
+  margin-bottom: 0;
+  height: 100%;
+  width: 100%;
+  /* height: 100%; */
+  /* position: relative;
+  top: 0;
+  height: auto; */
+  /* height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; */
+}
+
+#blob.green {
+  /* background:  rgba(95, 180, 94, 0.8); */
+  background: rgba(95, 180, 94, 1);
+  box-shadow: inset 0px 3.29715px 21.4315px rgba(105, 105, 105, 0.38);
+  animation: pulse-green 2s infinite;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 50px;
+  height: 50px;
+  margin-left: 215px;
+}
+
+@keyframes pulse-green {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgb(167, 224, 167);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #ffffff;
+  }
+}
+
+#btnToWatch {
+  font-family: Cairo;
+
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 350px;
+  height: 60px;
+  text-align: center;
+  background: #04121b;
+  border-radius: 13.6686px;
+}
+
+#containerPayment {
+  font-family: "Cairo", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  text-align: center;
+  line-height: 2;
+}
+#choosehowtopay :first-child(h4) {
+  display: flex;
+  margin-top: 15px;
+}
+#textSecond {
+  margin-top: 15px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  margin-bottom: 15px;
+}

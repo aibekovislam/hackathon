@@ -8,17 +8,17 @@ function NavbarDark() {
   return (
     <>
       <div className="pc">
-        <div className="black">
-          <div className="container navbar">
-            <div className="navbar__items">
-              <div className="navbar__item">
+        <div className="bla">
+          <div className="container nav">
+            <div className="navbar__it">
+              <div className="navbar__i">
                 <div>
                   <LogoSvg />
                 </div>
               </div>
-              <ul className="navbar__item">
-                <li className="item">
-                  <div className="language_btn">
+              <ul className="navbar__i">
+                <li className="i">
+                  <div className="language">
                     <button>
                       <DropDownSvg />
                       English
@@ -26,8 +26,8 @@ function NavbarDark() {
                     </button>
                   </div>
                 </li>
-                <li className="item">
-                  <button className="sign_in_btn">Sign In</button>
+                <li className="i">
+                  <button className="sign">Sign In</button>
                 </li>
               </ul>
             </div>
