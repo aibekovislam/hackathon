@@ -96,8 +96,9 @@
 
 .blockTitles span{
     color: white;
-    font-size: 23px;
+    font-size: 33px;
     font-weight: normal;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .blockFilm{
@@ -124,18 +125,49 @@
     border-radius: 8px;
 }
 
+.blackShadow3{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg,transparent,black);
+    /* background: linear-gradient(180deg, transparent, #FDD835); */
+    width: 700px;
+    height: 250px;
+    border-radius: 8px;
+}
+
 .blackShadowTitle{
     color: white;
     padding-left: 100px;
     padding-top: 50px;
     font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    position: relative;
+    bottom: 80px;
+}
+.blackShadow3Title{
+    color: white;
+    /* background: linear-gradient(90deg, #FDD835, #FF5722, #4CAF50, #03A9F4, #9C27B0); */
+    /* -webkit-background-clip: text; */
+    /* -moz-background-clip: text; */
+    /* background-clip: text; */
+    /* color: transparent; */
+    padding-left: 100px;
+    padding-top: 100px;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    position: relative;
+    bottom: 0px;
 }
 .blackShadowText{
+    position: relative;
     color: white;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 10px;
     font-size: 20px;
+    bottom: 100px;
 }
 
 .blockFilter{
@@ -146,21 +178,23 @@
 .blockFilter__items{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
 }
 .blockFilter__items button{
-    padding: 8px 25px 8px 25px;
-    background-color: initial;
-    border: 3px solid white;
+    padding: 48px 35px 48px 35px;
+    background: #171925;
+    border: none;
     color: white;
-    border-radius: 100px;
+    border-radius: 8px;
+    font-weight: 500;
 }
 
 .mainMoviesTitle{
     font-size: 33px;
     color: white;
     margin-bottom: 30px;
+    font-family: 'Bebas Neue', cursive;
 }
 .mainMoviesList{
     width: 100%;
@@ -195,5 +229,239 @@
 }
 .subscribe{
     margin-top: 10px;
-    color: rgb(255, 0, 43);;
+    color: #01FFFF;
+}
+
+
+
+
+
+.stabilzBlock{
+    width: 200px;
+    height: 300px;
+    margin: 0px 30px;
+    border-radius: 8px;
+}
+
+
+.stabilz{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+    /* padding-right: 23px; */
+}
+.stabilz:hover{
+    background: #171925;
+    opacity: 0.5;
+    color: white;
+}
+
+.marqueeBlock{
+    background: transparent;
+    height: 350px;
+    border-radius: 32px;
+}
+
+.overlay{
+    --gradient-color: none !important;
+}
+
+.marqueeTitle{
+    text-align: center;
+    font-size: 43px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+
+
+
+
+.gradient-animation {
+    background: linear-gradient(-45deg, #ff3a3a, #ff893a, #ffda3a, #9cff3a, #3affa5, #3a80ff, #913aff, #ff3a8c);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+
+.blockTopDayFilm{
+    width: 100%;
+    height: 550px;
+    background-color: #3a80ff;
+    margin-top: 33px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.blackShadow2{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(270deg,transparent,black);
+    width: 1000px;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.blackShadow2Title{
+    color: white;
+    position: relative;
+    left: 70px;
+    top: 100px;
+    font-size: 50px;
+}
+.blackShadow2Text{
+    position: relative;
+    color: white;
+    left: 70px;
+    top: 100px;
+    padding-top: 33px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+}
+
+.blackShadow2PodText{
+    position: relative;
+    color: white;
+    left: 70px;
+    top: 100px;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+}
+
+.blackShadow2Button{
+    position: relative;
+    color: white;
+    left: 70px;
+    top: 100px;
+    margin-top: 25px;
+    font-size: 17px;
+    background-image: linear-gradient(to right, #171925 0%, black 100%);
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 80px;
+}
+
+
+.SubscribeButton{
+    position: relative;
+    color: white;
+    left: 70px;
+    top: 100px;
+    margin-top: 15px;
+    font-size: 17px;
+    background-color:  #FF3BB2;
+    box-shadow: 1px 6px 53px 0px rgba(255,58,140,0.75);
+    -webkit-box-shadow: 1px 6px 53px 0px rgba(255,58,140,0.75);
+    -moz-box-shadow: 1px 6px 53px 0px rgba(255,58,140,0.75);
+    border: none;
+    padding: 10px 30px 10px 30px;
+    border-radius: 80px;
+}
+
+.TrailerButton{
+    position: relative;
+    color: white;
+    left: 70px;
+    top: 100px;
+    margin-top: 15px;
+    font-size: 17px;
+    /* background: #171925, linear-gradient(60deg, #FF3BB2, #01FFFF) border-box; */
+    background: 
+        linear-gradient(#171925, #171925) padding-box,
+        linear-gradient(60deg, #FF3BB2, #01FFFF) border-box;
+    border: 1px solid transparent;
+    padding: 10px 30px 10px 30px;
+    border-radius: 80px;
+    margin-left: 15px;
+}
+
+.blackShadow2Description {
+    position: relative;
+    color: white;
+    left: 70px;
+    top: 100px;
+    margin-top: 35px;
+    line-height: 27px;
+    font-size: 17px;
+}
+
+.star{
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+
+
+.topFilmToday{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.blockOscarsFilm{
+    margin-top: 75px;
+    margin-bottom: 25px;
+    font-size: 37px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.oscarFilms{
+    margin-top: 20px;
+    width: 290px !important;
+    height: 400px;
+    background:
+        linear-gradient(#ccc 0 0) padding-box, 
+        linear-gradient(90deg,#F0B800, #FDD835) border-box;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+
+.imgFluid{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"; */
+
+.blockFAQ{
+    margin-top: 130px;
+    margin-bottom: 33px;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    background: linear-gradient(273deg, #171925, #12afaf);
+}
+
+.blurBlock{
+    width: 100%;
+    height: 300px;
+    
 }
