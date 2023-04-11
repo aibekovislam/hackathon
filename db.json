@@ -10,7 +10,9 @@
             ],
             "description": "At first glance, you might think that Wakanda is the usual territory of wild Africa, but this is not so. Here, in the bowels of the desert lands, there are deposits of a unique metal that can absorb vibrations.",
             "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BNTM4NjIxNmEtYWE5NS00NDczLTkyNWQtYThhNmQyZGQzMjM0XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg",
-            "background": "./src/static/panther (2).png"
+            "background": "./src/static/panther (2).png",
+            "oscar": false,
+            "oscarBack": "https://www.thecosmiccircus.com/wp-content/uploads/2023/01/black-panther-wakanda-forever-poster.jpeg"
         },
         {
             "id": 2,
@@ -22,7 +24,9 @@
             ],
             "description": "At first glance, you might think that Wakanda is the usual territory of wild Africa, but this is not so. Here, in the bowels of the desert lands, there are deposits of a unique metal that can absorb vibrations.",
             "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BMTUyNzgxNjg2M15BMl5BanBnXkFtZTgwMTY1NDI1NjE@._V1_.jpg",
-            "background": "./src/static/kung fu panda (1).png"
+            "background": "./src/static/kung fu panda (1).png",
+            "oscar": false,
+            "oscarBack": "https://w0.peakpx.com/wallpaper/954/652/HD-wallpaper-kung-fu-panda-kung-fu-panda-3.jpg"
         },
         {
             "id": 3,
@@ -34,7 +38,9 @@
             ],
             "description": "The film is set at the end of World War II in Nazi Germany. A group of American soldiers are planning a daring military operation.",
             "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BMjA4MDU0NTUyN15BMl5BanBnXkFtZTgwMzQxMzY4MjE@._V1_.jpg",
-            "background": "./src/static/maket.png"
+            "background": "./src/static/maket.png",
+            "oscar": false,
+            "oscarBack": "https://images8.alphacoders.com/517/517155.jpg"
         },
         {
             "id": 4,
@@ -46,7 +52,9 @@
             ],
             "description": "CYBERPUNK: EDGERUNNERS TELLS A STANDALONE, 10-EPISODE STORY ABOUT A STREET KID TRYING TO SURVIVE IN A TECHNOLOGY AND BODY MODIFICATION-OBSESSED CITY OF THE FUTURE.",
             "posterIMAGE": "https://pbs.twimg.com/media/FUs-apUXoAEEnFF?format=jpg&name=900x900",
-            "background": "./src/static/Сyberpunk.png"
+            "background": "./src/static/Сyberpunk.png",
+            "oscar": false,
+            "oscarBack": "https://images2.alphacoders.com/127/1272824.png"
         },
         {
             "id": 5,
@@ -58,7 +66,9 @@
             ],
             "description": "With the price on his head ever increasing, legendary hit man John Wick takes his fight against the High Table global as he seeks out the most powerful players in the underworld, from New York to Paris to Japan to Berlin.",
             "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BMDExZGMyOTMtMDgyYi00NGIwLWJhMTEtOTdkZGFjNmZiMTEwXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_.jpg",
-            "background": "https://static01.nyt.com/images/2023/03/26/multimedia/john-wick-anatomy-zphl/john-wick-anatomy-zphl-videoSixteenByNine3000.jpg"
+            "background": "https://static01.nyt.com/images/2023/03/26/multimedia/john-wick-anatomy-zphl/john-wick-anatomy-zphl-videoSixteenByNine3000.jpg",
+            "oscar": false,
+            "oscarBack": "https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2023/03/14131755/John-Wick-Chapter-4-Keanu-Reeves.jpg"
         }
     ]
 }
