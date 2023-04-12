@@ -3,8 +3,12 @@ import '../static/style.css'
 import { ReactComponent as LogoSvg } from '../static/Filmoon.svg';
 import { ReactComponent as DropDownSvg } from '../static/Vector 1.svg';
 import { ReactComponent as GlobusSvg } from '../static/Vector (2).svg';
+import { useAuthContext } from '../contexts/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
+  const { user } = useAuthContext();
+  const navigate = useNavigate();
   return (
     <>
         <div className='pc'>
@@ -27,7 +31,7 @@ function Navbar() {
                                 </div>
                             </li>
                             <li className='item'>
-                                <button className='sign_in_btn'>Sign In</button>
+                                { !user ? <button className='sign_in_btn' onClick={() => navigate("/signin")}>Sign In</button> : null}
                             </li>
                         </ul>
                     </div>
