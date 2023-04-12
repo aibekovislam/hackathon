@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useFilmContext } from '../contexts/FilmContext'
 import { ReactComponent as LogoSvg } from '../static/Filmoon.svg';
 import { ReactComponent as StarSVG } from '../static/star-svgrepo-com.svg'
@@ -7,10 +7,15 @@ import Marquee from 'react-fast-marquee';
 import MySlider from './MySlider';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useAuthContext } from '../contexts/AuthContext';
+import { signOut } from 'firebase/auth';
+import { Button } from '@mui/material';
+import { auth } from '../firebase';
 
 function MoviesList() {
   const { movies, getMovies } = useFilmContext();
-
+  const { user } = useAuthContext();
+  const [isUserHave, setUserHave] = useState();
   useEffect(() => {
     getMovies();
   }, [])
@@ -35,8 +40,13 @@ function MoviesList() {
                   </div>
                   <div className='navbar__itemMainScreen'>
                     <input type='text' className='searchInput' placeholder='Search'/>
-                    <button className='signIn'>Sign In</button>
-                    <button className='signUp'>Sign Up</button>
+                    { isUserHave ? <>
+                      <button className='signIn'>Sign In</button>
+                      <button className='signUp'>Sign Up</button>
+                    </> : <Button variant='contained' color='error' onClick={() => {
+                      signOut(auth)
+                      setUserHave(!isUserHave)
+                    }}>Sign Out</Button> }
                     <div className='account'></div>
                   </div>
                 </div>

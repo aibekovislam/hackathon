@@ -1,5 +1,10 @@
 export const API = 'http://localhost:8000/movies';
 
 export const ACTIONS = {
-    movies: 'movies'
+    movies: 'movies',
+    user: 'user'
 }
+
+export const ADMINS = [
+    'islamxdaamduu@gmail.com'
+]
