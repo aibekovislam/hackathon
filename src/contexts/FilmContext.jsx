@@ -10,13 +10,16 @@ export function useFilmContext() {
 }
 
 const initState = {
-    movies: []
+    movies: [],
+    oneFilm: null
 }
 
 function reducer(state, action) {
     switch (action.type) {
         case ACTIONS.movies:
             return {...state, movies: action.payload}
+        case ACTIONS.oneFilm:
+            return {...state, oneFilm: action.payload}
         default:
             return state
     }
@@ -37,9 +40,54 @@ function FilmContext({ children }) {
     }
   }
 
+  async function getOneFilm(id) {
+    try {
+        const { data } = await axios.get(`${API}/${id}`);
+        console.log(data)
+        dispatch({
+            type: ACTIONS.oneFilm,
+            payload: data
+        })
+    } catch (error) {
+        console.log(error)
+    }
+  }
+
+  async function addReview(newReview) {
+    try {
+        await axios.post(API, newReview);
+        getMovies();
+    } catch (error) {   
+        console.log(error)
+    }
+  }
+
+  async function deleteReview(id) {
+    try {
+        await axios.delete(`${API}/${id}`);
+        getMovies()
+    } catch (error) {
+        console.log(error)
+    }
+  }
+
+  async function editReview(id, newReview) {
+    try {
+        await axios.patch(`${API}/${id}`, newReview);
+        getMovies();
+    } catch (error) {
+        console.log(error)
+    }
+  }
+
   const value = {
     movies: state.movies,
-    getMovies
+    getMovies,
+    getOneFilm,
+    oneFilm: state.oneFilm,
+    addReview,
+    deleteReview,
+    editReview
   }
 
 

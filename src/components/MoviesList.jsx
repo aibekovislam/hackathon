@@ -84,7 +84,7 @@ function MoviesList() {
                   <div className='cards'>
                     <img src={item.posterIMAGE} className='mainMoviesIMG' />
                     <span className='cards__title'>{item.title}.</span>
-                    <div className='subscribe'>Подписка</div>
+                    <div className='subscribe' onClick={() => {navigate(`/detail/${item.id}`)}}>More...</div>
                   </div>
                 ))}
               </div>
