@@ -5,6 +5,7 @@ import HomePage from "../pages/HomePage";
 import MainScreen from "../pages/MainScreen";
 import LeaveSoon from "../components/leaveSoon";
 import "../static/style.css";
+import FAQ from "../components/FAQ";
 
 function MainRoutes() {
   return (
@@ -14,6 +15,7 @@ function MainRoutes() {
       </Route>
       <Route path="/main" element={<MainScreen />} />
       <Route path="/leaving-so-soon" element={<LeaveSoon />} />
+      <Route path="/footer" element={<FAQ />} />
     </Routes>
   );
 }

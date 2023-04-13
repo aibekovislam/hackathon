@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.AboutUs {
+  margin: 0;
+  color: white;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  background: #04121b;
+
+  /* width: 1905px;
+  height: 1816px; */
+  left: 99px;
+  top: 160px;
+  width: 100%;
+  height: 100vh;
+}
+.rasstoyanie {
+  padding: 20px 175px 20px 175px;
+}
+.au {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 214.1%;
+}
+
+.generalltext {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.31px;
+  line-height: 214.1%;
+}
+
+.contactcollect {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 37.31px;
+  line-height: 214.1%;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.rasstoyanie {
+  margin: 0;
+}
