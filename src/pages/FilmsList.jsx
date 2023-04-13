@@ -18,7 +18,7 @@ function FilmsList() {
   const [ fetching, setFetching ] = useState(true);
   const [currentPage, setCurrentPage] = useState(+searchParams.get('_page') || 1);
   const [inputVal, setInputVal] = useState(searchParams.get("title_like") || '');
-  const [ category, setCategory ] = useState(searchParams.get("category") || 'all');
+  const [ category, setCategory ] = useState(searchParams.get("category") || '');
   useEffect(() => {
     document.addEventListener('scroll', scrollHandler);
     return function () {
@@ -59,6 +59,30 @@ function FilmsList() {
   useEffect(() => {
       getMovies();
   }, [searchParams])
+  const [firstMount, setFirstMount] = useState(true)
+  console.log(category)
+  useEffect(() => {
+    if(firstMount) {
+      setFirstMount(false);
+      return;
+    }
+		if (category === "all") {
+			setSearchParams({
+				title_like: inputVal,
+				_limit: LIMIT,
+				_page: 1,
+			});
+		} else {
+			setSearchParams({
+				title_like: inputVal,
+				category: category,
+				_limit: LIMIT,
+				_page: 1,
+			});
+		}
+		setCurrentPage(1);
+    setFetching(true)
+	}, [inputVal, category]);
   return (
     <>
       <div className='parent'>
@@ -102,7 +126,12 @@ function FilmsList() {
                       title_like: e.target.value
                     })
                 }} value={inputVal} className='searchInput' placeholder='Search'/>
-                <select onChange={(e) => setCategory(e.target.value)}>
+                <select onChange={(e) => {
+                  setSearchParams({
+                    category: e.target.value
+                  })
+                  setCategory(e.target.value)
+                }}>
                     <option value={"all"}>Filters</option>
                     <option value={"action"}>Action</option>
                     <option value={"comedy"}>Comedy</option>
