@@ -29,7 +29,14 @@ function FilmsList() {
   useEffect(() => {
     if(fetching) {
       axios.get(`http://localhost:8000/movies?_limit=${LIMIT}&_page=${currentPage}`).then(res => {
-        movies.push(...res.data);
+        const check = movies.filter((item, index, movies) => {
+          return movies.indexOf(item) !== index;
+        });
+        if(check !== movies) {
+          movies.push(...res.data)
+        } else {
+          return movies
+        }
         setCurrentPage(prevState => prevState + 1)
         // console.log(movies)
       })
