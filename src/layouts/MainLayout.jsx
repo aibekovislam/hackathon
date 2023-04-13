@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
 import { Outlet } from 'react-router-dom';
-import '../static/style.css'
+import '../static/style.css';
+import MyFooter from "../components/footer";
 
 function MainLayout() {
   return (
@@ -9,10 +10,12 @@ function MainLayout() {
       <div className="mainBlock">
         <Navbar/>
         <Outlet/>
+        {/* <MyFooter/> */}
       </div>
       <div className='mainBlockMobile'>
         <Navbar/>
         <Outlet/>
+        {/* <MyFooter/> */}
       </div>
     </>
   )
