@@ -93,12 +93,46 @@
     margin-top: 33px;
     margin-bottom: 23px;
 }
+.blockTitles2{
+    margin-top: 33px;
+    margin-bottom: 23px;
+    display: flex;
+    align-items: center;
+}
 
 .blockTitles span{
     color: white;
     font-size: 33px;
     font-weight: normal;
     font-family: 'Bebas Neue', cursive;
+}
+.blockTitles2 span{
+    color: white;
+    font-size: 33px;
+    font-weight: normal;
+    font-family: 'Bebas Neue', cursive;
+    margin-right: 130px;
+}
+
+.blockTitles2 input{
+    width: 685px;
+}
+.blockTitles2 select{
+    margin-left: 50px;
+    /* padding: 0px 55px 0px 55px; */
+    width: 195px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: transparent;
+    /* background-color: #FF3BB2; */
+    color: white;
+}
+.blockTitles2 select option{
+    background-color: #171925;
+    border: none;
+    text-align: center;
 }
 
 .blockFilm{
@@ -210,7 +244,14 @@
     height: 250px;
     border-radius: 8px;
     margin-right: 13px;
-    margin-bottom: 190px;
+    margin-bottom: 120px;
+}
+
+.d-f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 .mainMoviesIMG{
@@ -222,10 +263,11 @@
 }
 
 .cards__title{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    /* margin-top: 15px;
+    margin-bottom: 15px; */
     color: white;
     font-weight: normal;
+    margin: 0;
 }
 .subscribe{
     margin-top: 10px;

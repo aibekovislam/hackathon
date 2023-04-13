@@ -11,14 +11,15 @@ import { useAuthContext } from '../contexts/AuthContext';
 import { signOut } from 'firebase/auth';
 import { Button } from '@mui/material';
 import { auth } from '../firebase';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { LIMIT } from '../utils/consts';
 
 function MoviesList() {
   const { movies, getMovies } = useFilmContext();
   const { user } = useAuthContext();
   const [isUserHave, setUserHave] = useState();
-  useEffect(() => {
-    getMovies();
-  }, [])
+  const navigate = useNavigate() 
   return (
     <>
       <div className='parent'>
@@ -41,11 +42,12 @@ function MoviesList() {
                   <div className='navbar__itemMainScreen'>
                     <input type='text' className='searchInput' placeholder='Search'/>
                     { isUserHave ? <>
-                      <button className='signIn'>Sign In</button>
-                      <button className='signUp'>Sign Up</button>
-                    </> : <Button variant='contained' color='error' onClick={() => {
+                      <button className='signIn' onClick={() => navigate("/signin")}>Sign In</button>
+                      <button className='signUp' onClick={() => navigate("/signin")}>Sign Up</button>
+                    </> : <Button variant='contained' style={{marginLeft: '23px'}} color='error' onClick={() => {
                       signOut(auth)
                       setUserHave(!isUserHave)
+                      navigate("/signin")
                     }}>Sign Out</Button> }
                     <div className='account'></div>
                   </div>
@@ -54,7 +56,7 @@ function MoviesList() {
           </div>
           <div className='container'>
             <div className='blockTitles'>
-              <span>Welcome 'guest'</span>
+            <span>Welcome '{user?.displayName}'</span>
             </div>
             <div className='blockFilm'>
               <img src={require("../static/milad-fakurian-seA-FPPXL-M-unsplash.jpg")} className='imgBlock'/>
@@ -85,6 +87,9 @@ function MoviesList() {
                     <div className='subscribe'>Подписка</div>
                   </div>
                 ))}
+              </div>
+              <div className='d-f'>
+                <Button onClick={() => navigate("/films")} variant='contained' color='info'>More films</Button>
               </div>
             </div>
             <div>

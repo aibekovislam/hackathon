@@ -1,6 +1,6 @@
 import axios from 'axios';
-import React, { createContext, useContext, useReducer } from 'react';
-import { ACTIONS, API } from '../utils/consts';
+import React, { createContext, useContext, useReducer, useState } from 'react';
+import { ACTIONS, API, LIMIT } from '../utils/consts';
 
 const filmContext = createContext();
 
@@ -24,11 +24,10 @@ function reducer(state, action) {
 
 function FilmContext({ children }) {
   const [state, dispatch] = useReducer(reducer, initState);
-
+  const [currentPage, setCurrentPage] = useState(1);
   async function getMovies() {
     try {
-        const res = await axios.get(API);
-        console.log(res);
+        const res = await axios.get(`${API}${window.location.search || `?_limit=${LIMIT}`}`);
         dispatch({
             type: ACTIONS.movies,
             payload: res.data

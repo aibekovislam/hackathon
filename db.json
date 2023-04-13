@@ -4,10 +4,8 @@
             "id": 1,
             "title": "Black Panther 2",
             "date": "October 26, 2022",
-            "category": [
-                "Action",
-                "Adventure"
-            ],
+            "category": 
+                "adventure",
             "description": "At first glance, you might think that Wakanda is the usual territory of wild Africa, but this is not so. Here, in the bowels of the desert lands, there are deposits of a unique metal that can absorb vibrations.",
             "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BNTM4NjIxNmEtYWE5NS00NDczLTkyNWQtYThhNmQyZGQzMjM0XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg",
             "background": "./src/static/panther (2).png",
@@ -18,10 +16,9 @@
             "id": 2,
             "title": "Kung-fu panda 3",
             "date": "October 26, 2022",
-            "category": [
-                "Animation",
-                "Comedy"
-            ],
+            "category": 
+                "animation",
+
             "description": "At first glance, you might think that Wakanda is the usual territory of wild Africa, but this is not so. Here, in the bowels of the desert lands, there are deposits of a unique metal that can absorb vibrations.",
             "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BMTUyNzgxNjg2M15BMl5BanBnXkFtZTgwMTY1NDI1NjE@._V1_.jpg",
             "background": "./src/static/kung fu panda (1).png",
@@ -32,10 +29,9 @@
             "id": 3,
             "title": "Fury (2014)",
             "date": "October 26, 2022",
-            "category": [
-                "Drama",
-                "Action"
-            ],
+            "category": 
+                "drama",
+
             "description": "The film is set at the end of World War II in Nazi Germany. A group of American soldiers are planning a daring military operation.",
             "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BMjA4MDU0NTUyN15BMl5BanBnXkFtZTgwMzQxMzY4MjE@._V1_.jpg",
             "background": "./src/static/maket.png",
@@ -46,10 +42,8 @@
             "id": 4,
             "title": "Cyberpunk",
             "date": "October 26, 2022",
-            "category": [
-                "Sub-genre",
-                "Action"
-            ],
+            "category": 
+                "action",
             "description": "CYBERPUNK: EDGERUNNERS TELLS A STANDALONE, 10-EPISODE STORY ABOUT A STREET KID TRYING TO SURVIVE IN A TECHNOLOGY AND BODY MODIFICATION-OBSESSED CITY OF THE FUTURE.",
             "posterIMAGE": "https://pbs.twimg.com/media/FUs-apUXoAEEnFF?format=jpg&name=900x900",
             "background": "./src/static/Сyberpunk.png",
@@ -60,13 +54,144 @@
             "id": 5,
             "title": "John Wick 4",
             "date": "March 24, 2023",
-            "category": [
-                "Neo-noir",
-                "Action"
-            ],
+            "category": 
+                
+                "action",
+            
             "description": "With the price on his head ever increasing, legendary hit man John Wick takes his fight against the High Table global as he seeks out the most powerful players in the underworld, from New York to Paris to Japan to Berlin.",
             "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BMDExZGMyOTMtMDgyYi00NGIwLWJhMTEtOTdkZGFjNmZiMTEwXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_.jpg",
             "background": "https://static01.nyt.com/images/2023/03/26/multimedia/john-wick-anatomy-zphl/john-wick-anatomy-zphl-videoSixteenByNine3000.jpg",
+            "oscar": false,
+            "oscarBack": "https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2023/03/14131755/John-Wick-Chapter-4-Keanu-Reeves.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Pulp Fiction",
+            "date": "October 14, 1994",
+            "category": 
+                "thriller",
+ 
+            "description": "In the realm of underworld, a series of incidents intertwines the lives of two Los Angeles mobsters, a gangster's wife, a boxer and two small-time criminals.",
+            "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+            "background": "https://cdn2.lamag.com/wp-content/uploads/sites/6/2019/10/pulpfiction_lead1_miramax-1068x712.jpg",
+            "oscar": true,
+            "oscarBack": "https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2023/03/14131755/John-Wick-Chapter-4-Keanu-Reeves.jpg"
+        },
+        {
+            "id": 7,
+            "title": "Inglourious Basterds",
+            "date": "July 28, 2009",
+            "category": "comedy",
+            "description": "A few Jewish soldiers are on an undercover mission to bring down the Nazi government and put an end to the war. Meanwhile, a woman wants to avenge the death of her family from a German officer.",
+            "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BOTJiNDEzOWYtMTVjOC00ZjlmLWE0NGMtZmE1OWVmZDQ2OWJhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg",
+            "background": "https://cdn.wallpapersafari.com/13/67/FE1e0L.jpg",
+            "oscar": false,
+            "oscarBack": "https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2023/03/14131755/John-Wick-Chapter-4-Keanu-Reeves.jpg"
+        },
+        {
+            "id": 8,
+            "title": "Once Upon a Time... in Hollywood",
+            "date": "July 26, 2019",
+            "category": 
+                
+                "comedy",
+        
+            "description": "Rick, a washed-out actor, and Cliff, his stunt double, struggle to recapture fame and success in 1960s Los Angeles. In their mission, they must tackle several twists and turns.",
+            "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BOTg4ZTNkZmUtMzNlZi00YmFjLTk1MmUtNWQwNTM0YjcyNTNkXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_FMjpg_UX1000_.jpg",
+            "background": "https://mobimg.b-cdn.net/v3/fetch/8f/8f1d9a9f8c0a321756785b57287ca665.jpeg",
+            "oscar": false,
+            "oscarBack": "https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2023/03/14131755/John-Wick-Chapter-4-Keanu-Reeves.jpg"
+        },
+        {
+            "id": 9,
+            "title": "The Banshees of Inisherin",
+            "date": "October 21, 2022",
+            "category": 
+                "adventure",
+                
+            "description": "On a remote island off the coast of Ireland, Pádraic is devastated when his buddy Colm suddenly puts an end to their lifelong friendship. With help from his sister and a troubled young islander, Pádraic sets out to repair the damaged relationship by any means necessary. ",
+            "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BM2NlZDI0ZDktNTg5OS00ZjQ1LWI4MDEtN2I0MDE5NWRiNzA4XkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_FMjpg_UX1000_.jpg",
+            "background": "https://images.alphacoders.com/129/1295914.jpg",
+            "oscar": false,
+            "oscarBack": "https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2023/03/14131755/John-Wick-Chapter-4-Keanu-Reeves.jpg"
+        },
+        {
+            "id": 10,
+            "title": "Everything Everywhere All at Once",
+            "date": "March 25, 2022",
+            "category": 
+                
+                "fantasy",
+            
+            "description": "When an interdimensional rupture unravels reality, an unlikely hero must channel her newfound powers to fight bizarre and bewildering dangers from the multiverse as the fate of the world hangs in the balance.",
+            "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BYTdiOTIyZTQtNmQ1OS00NjZlLWIyMTgtYzk5Y2M3ZDVmMDk1XkEyXkFqcGdeQXVyMTAzMDg4NzU0._V1_FMjpg_UX1000_.jpg",
+            "background": "https://www.hollywoodreporter.com/wp-content/uploads/2022/11/EEAAO_04975_R-H-2022.jpg?w=1296",
+            "oscar": true,
+            "oscarBack": "https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2023/03/14131755/John-Wick-Chapter-4-Keanu-Reeves.jpg"
+        },
+        {
+            "id": 11,
+            "title": "All Quiet on the Western Front",
+            "date": "September 29, 2022",
+            "category": 
+                
+                "drama",
+        
+            "description": "War breaks out in Germany in 1914. Paul Bäumer and his classmates quickly enlist in the army to serve their fatherland. No sooner are they drafted than the first images from the battlefield show them the reality of war.",
+            "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BMzM4ZDJhYjYtZGY5Ny00NTk0LWI4ZTYtNjczZDFiMGI2ZjEzXkEyXkFqcGdeQXVyNjc5NjEzNA@@._V1_FMjpg_UX1000_.jpg",
+            "background": "https://www.gannett-cdn.com/presto/2022/10/18/USAT/c090a175-75ac-40cc-b52f-5607ee5e1419-Quiet.jpeg?crop=6047,3402,x0,y303&width=3200&height=1801&format=pjpg&auto=webp",
+            "oscar": false,
+            "oscarBack": "https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2023/03/14131755/John-Wick-Chapter-4-Keanu-Reeves.jpg"
+        },
+        {
+            "id": 12,
+            "title": "1917",
+            "date": "December 25, 2019",
+            "category": 
+                
+                "drama",
+            
+            "description": "During World War I, two British soldiers -- Lance Cpl. Schofield and Lance Cpl. Blake -- receive seemingly impossible orders. In a race against time, they must cross over into enemy territory to deliver a message that could potentially save 1,600 of their fellow comrades -- including Blake's own brother.",
+            "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BOTdmNTFjNDEtNzg0My00ZjkxLTg1ZDAtZTdkMDc2ZmFiNWQ1XkEyXkFqcGdeQXVyNTAzNzgwNTg@._V1_FMjpg_UX1000_.jpg",
+            "background": "https://m.media-amazon.com/images/M/MV5BY2ZhMjI5MWEtOTVkYi00MjU1LWExOTgtYzIzZWY1YzQyZDM0XkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_.jpg",
+            "oscar": true,
+            "oscarBack": "https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2023/03/14131755/John-Wick-Chapter-4-Keanu-Reeves.jpg"
+        },
+        {
+            "id": 13,
+            "title": "Dunkirk",
+            "date": "July 21, 2017",
+            "category": 
+                
+                "drama",
+            
+            "description": "During World War II, soldiers from the British Empire, Belgium and France try to evacuate from the town of Dunkirk during a arduous battle with German forces.",
+            "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BN2YyZjQ0NTEtNzU5MS00NGZkLTg0MTEtYzJmMWY3MWRhZjM2XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_.jpg",
+            "background": "https://media.newyorker.com/photos/59779db5c100c36587d57458/16:9/w_4002,h_2251,c_limit/Brody-Dunkirk.JPG",
+            "oscar": false,
+            "oscarBack": "https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2023/03/14131755/John-Wick-Chapter-4-Keanu-Reeves.jpg"
+        },
+        {
+            "id": 14,
+            "title": "Interstellar",
+            "date": "November 7, 2014",
+            "category": 
+                "fantasy",
+                
+            "description": "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
+            "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+            "background": "https://media.gq-magazine.co.uk/photos/5d139495b6fee9b1fac9e6ef/master/pass/Interstellar-02-GQ-30Oct14_pr_b.jpg",
+            "oscar": false,
+            "oscarBack": "https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2023/03/14131755/John-Wick-Chapter-4-Keanu-Reeves.jpg"
+        },
+        {
+            "id": 15,
+            "title": "Dune",
+            "date": "October 22, 2021",
+            "category": "fantasy",
+            "description": "Paul Atreides arrives on Arrakis after his father accepts the stewardship of the dangerous planet. However, chaos ensues after a betrayal as forces clash to control melange, a precious resource.",
+            "posterIMAGE": "https://m.media-amazon.com/images/M/MV5BN2FjNmEyNWMtYzM0ZS00NjIyLTg5YzYtYThlMGVjNzE1OGViXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+            "background": "https://ca-times.brightspotcdn.com/dims4/default/470c342/2147483647/strip/true/crop/2250x1500+0+0/resize/2000x1333!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F29%2Fdd%2Fa906fdb6487bbb7a9fd225d14ecf%2Fla-ca-exclusives-fall-sneaks-dune-movie-070.JPG",
             "oscar": false,
             "oscarBack": "https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2023/03/14131755/John-Wick-Chapter-4-Keanu-Reeves.jpg"
         }
