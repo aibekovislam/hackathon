@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.add__input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 400px; */
+}
+
+.AddBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-fIn{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.d-fIn2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.input{
+    width: 350px;
+    height: 45px;
+    /* margin-top: 23px; */
+    border-radius: 8px;
+    border: none;
+    padding-left: 10px;
+}
+
+
+.title{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}

@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=K2D:wght@600&family=Montserrat:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Jost:wght@400;600&family=K2D:wght@600&family=Montserrat:wght@400;600;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap');
+/* !========== Footer ===========*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+
+
+.imageInBack{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  z-index: 0;
+  /* background-image: url(1145937.jpg); */
+}
+
+.container{
+  max-width: 1300px !important;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.navbarDetails{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-top: 5px; */
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+}
+
+.navbarDetailsItems{
+  width: 400px;
+}
+
+.navigationDetails{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigationDetails li{
+  list-style-type: none;
+  color: white;
+  font-family: 'Jost', sans-serif;
+  cursor: pointer;
+}
+
+.detailsContentItems{
+  margin-top: 75px;
+  /* margin-bottom: 50px; */
+}
+
+.detailsContentTitleAndText{
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+  /* align-items: center; */
+  justify-content: center;
+}
+.detailsContentTitleAndText h1{
+  font-size: 60px;
+  color: white;
+  font-family: 'Jost', sans-serif;
+}
+
+.detailsContentTitleAndText p {
+  width: 825px;
+  font-size: 29px;
+  font-weight: normal;
+  color: white;
+  font-family: 'Jost', sans-serif;
+  margin-top: 20px;
+}
+
+.date{
+  color: white;
+  font-size: 30px;
+  margin-bottom: 23px;
+  font-family: 'Jost', sans-serif;
+}
+
+.buttons{
+  display: flex;
+  width: 410px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy{
+  width: 190px;
+  height: 50px;
+  border-radius: 80px;
+  border: none;
+  color: white;
+  font-family: 'Jost', sans-serif;
+  background-color: #333;
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+}
+.add{
+  width: 190px; 
+  height: 50px;
+  border-radius: 80px;
+  border: 3px solid white;
+  font-family: 'Jost', sans-serif;
+  color: white;
+  margin-left: 10px;
+  background-color: initial;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.df{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nearlyBlock{
+  margin-left: 200px;
+  margin-top: 15px;
+  width: 320px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 93px;
+}
+
+.nearlyBlockCommets{
+  z-index: 4;
+  margin-top: 50px;
+}
+.photosBorderLine{
+  z-index: 3;
+  width: 100%;
+  /* height: 10px; */
+}
+
+.comments{
+  display: flex;
+  flex-direction: column;
+  row-gap: 43px;
+}
+
+.commentsBlock{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputForComment{
+  width: 250px;
+  height: 35px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: none;
+  padding-left: 10px;
+}
+
+.commentButton{
+  height: 35px;
+  width: 70px;
+  border: none;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: #333;
+}
+
+.commentsTitle{
+  color: white;
+  font-family: 'Jost', sans-serif;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.photos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition-duration: 0.3s;
+  z-index: 2;
+}
+
+.photos h1{
+  color: white;
+  margin-bottom: 23px;
+  font-family: 'Jost', sans-serif;
+}
+
+.miniPhotos{
+  z-index: 1;
+  width: 330px;
+  height: 210px;
+  border-radius: 16px;
+  object-fit: cover;
+  transition-duration: 0.3s;
+}
+
+.miniPhotos:hover{
+  transform: translateY(-8.8px);
+}
+
+.commentsText{
+  color: white;
+  font-family: 'Jost', sans-serif;
+}
+
+.circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 100px;
+  background-color: #aeaeae;
+  border: none;
+  margin-right: 10px;
+}
+
+/*! ================ Button ================ */
+
+.btns {
+  display: flex;
+  gap: 20px;
+}
+
+/*? Buy */
+
+.animbut {
+  width: 200px;
+  padding: 20px 30px;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.animbut:hover .wave {
+  top: -120px;
+}
+
+.animbut span {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.animbut .wave {
+  width: 200px;
+  height: 200px;
+  background-color: #b41ecb;
+  box-shadow: inset 0 0 20px white;
+  position: absolute;
+  left: 0;
+  top: -80px;
+  transition: 0.4s;
+}
+
+.animbut .wave::before,
+.animbut .wave::after {
+  width: 200%;
+  height: 200%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.animbut .wave::before {
+  border-radius: 45%;
+  background-color: rgba(20, 20, 20, 1);
+  opacity: 1;
+  animation: wave 5s linear infinite;
+}
+
+.animbut .wave::after {
+  border-radius: 40%;
+  /* background: transparent; */
+  background-color: rgba(20, 20, 20, 0.5);
+  animation: wave 10s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+/*? ADD */
+
+.animabut {
+  width: 200px;
+  padding: 20px 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.animabut:hover .otherwave {
+  top: -120px;
+}
+
+.animabut span {
+  position: relative;
+  z-index: 1;
+  color: #b41ecb;
+  font-size: 25px;
+  letter-spacing: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.animabut .otherwave {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: inset 0 0 20px #b41ecb;
+  position: absolute;
+  left: 0;
+  top: -80px;
+  transition: 0.4s;
+}
+
+.animabut .otherwave::before,
+.animabut .otherwave::after {
+  width: 200%;
+  height: 200%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.animabut .otherwave::before {
+  border-radius: 45%;
+  background-color: rgba(20, 20, 20, 1);
+  opacity: 1;
+  animation: otherwave 5s linear infinite;
+}
+
+.animabut .otherwave::after {
+  border-radius: 40%;
+  /* background: transparent; */
+  background-color: rgba(20, 20, 20, 0.5);
+  animation: otherwave 10s linear infinite;
+}
+
+@keyframes otherwave {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+.heart {
+  z-index: 2;
+}
+
+/*! For Name of Movie and his genre */
+
+.namedandbutton {
+  position: relative;
+  top: 190px;
+  left: 100px;
+}
+
+.alltext {
+  color: white;
+  font-family: "Jost", sans-serif;
+  display: block;
+}
+
+.called {
+  padding: 0px;
+  gap: 10px;
+
+  width: 516px;
+  height: 188px;
+}
+
+.called h1 {
+  width: 516px;
+  height: 188px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 94px;
+}
+
+.genre {
+  padding: 10px 0px;
+  gap: 10px;
+
+  width: 486px;
+  height: 63px;
+}
+
+.genre h4 {
+  width: 486px;
+  height: 43px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+}
+/* ! Description */
+.descrip h4 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  position: absolute;
+  width: 844px;
+  height: 186px;
+  left: 25px;
+  top: 592px;
+
+  color: white;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 400;
+  font-size: 29.8503px;
+  line-height: 43px;
+  align-self: stretch;
+}
+
+/* ! Photo description for movie  */
+
+.slider {
+  left: 1150px;
+  top: 150px;
+  width: 332.58px;
+  height: 433px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(188.8px * 3);
+  transition: transform 0.6s ease;
+}
+
+.slider-container img {
+  width: 312.58px;
+  height: 188.8px;
+}
+
+.slider:hover .slider-container {
+  transform: translateY(-188.8px);
+}
+
+/*! Its film review */
+
+.filmrev {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  /* gap: 35px;/ */
+  position: relative;
+  bottom: 550px;
+  left: 1150px;
+  width: 300px;
+}
+
+.firstrev,
+.secrev {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 6px;
+}
+
+.filmrev h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 6px;
+  color: white;
+  width: 285.31px;
+  height: 29px;
+}
+
+.filmrev h4 {
+  font-weight: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  color: white;
+
+  width: 313px;
+  height: 87px;
+}

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Slider from 'react-slick';
 import { useFilmContext } from '../contexts/FilmContext';
 import '../static/movieList.css';
@@ -19,11 +20,12 @@ function MySlider() {
       slidesToShow: 4
 
   };
+  const navigate = useNavigate();
   return (
     <Slider {...settings}>
         {movies.map((item) => (
             <div className='oscarFilms' key={item.id}>
-                <img src={item.posterIMAGE} alt="img" className='imgFluid'/>
+                <img src={item.posterIMAGE} onClick={() => {navigate(`/detail/${item.id}`)}} className='imgFluid'/>
                 {/* <div className='blackShadow3'>
                     <div className='blackShadow3Title'>{item.title}</div>
                     <div></div>

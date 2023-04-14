@@ -1,5 +1,5 @@
 import { TextField } from "@mui/material";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, updateProfile } from "firebase/auth";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../contexts/AuthContext";
@@ -12,6 +12,7 @@ function SignPage() {
   const { register, logIn, user }=  useAuthContext();
   const [myEmail, setEmail] = useState();
   const [myPassword, setPassword] = useState();
+  const [username, setUsername] = useState();
 
   console.log(user)
 
@@ -57,6 +58,12 @@ function SignPage() {
                 </>
               : 
               <>
+                <TextField sx={{ label: { color: "white" } }}
+                id="filled-basic"
+                label="Username"
+                variant="filled"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)} />
                 <div className="ThirdInput">
                   {/* <input type="checkbox" /> */}
                   {/* <h4>Please do not send me special orders</h4> */}
@@ -64,8 +71,11 @@ function SignPage() {
                     { isLogin ? "Don't have an account? Sign Up" : "Already have an account? Sign in" }
                   </Link>
                 </div>
-                <button className="Next" onClick={() => {
-                  createUserWithEmailAndPassword(auth, myEmail, myPassword);
+                <button className="Next" onClick={async () => {
+                  await createUserWithEmailAndPassword(auth, myEmail, myPassword);
+                  await updateProfile(auth.currentUser, {
+                    displayName: username
+                  })
                   return navigate('/main') 
                 }}>Sign Up</button>
               </>

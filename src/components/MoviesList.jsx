@@ -7,14 +7,16 @@ import Marquee from "react-fast-marquee";
 import MySlider from "./MySlider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useAuthContext } from "../contexts/AuthContext";
-import { signOut } from "firebase/auth";
 import { Button, IconButton } from "@mui/material";
-import { auth } from "../firebase";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-// import HeartBrokenIcon from "@mui/icons-material/HeartBroken";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useCartContext } from "../contexts/CartContext";
+import { useAuthContext } from '../contexts/AuthContext';
+import { signOut } from 'firebase/auth';
+import { auth } from '../firebase';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { LIMIT } from '../utils/consts';
 
 function MoviesList() {
   const { movies, getMovies } = useFilmContext();
@@ -25,27 +27,6 @@ function MoviesList() {
   useEffect(() => {
     getMovies();
   }, []);
-
-  // let calcScrollValue = () => {
-  //   let scrollProgress = document.getElementById("progress");
-  //   let progressValue = document.getElementById("progress-value");
-  //   let pos = document.documentElement.scrollTop;
-  //   let calcHeight =
-  //     document.documentElement.scrollHeight -
-  //     document.documentElement.clientHeight;
-  //   if (pos > 100) {
-  //     scrollProgress.style.display = "grid";
-  //   } else {
-  //     scrollProgress.style.display = "none";
-  //   }
-  //   scrollProgress.addEventListener("click", () => {
-  //     document.documentElement.scrollTop = 0;
-  //   });
-  //   scrollProgress.style.background = `conic-gradient (#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}% )`;
-  // };
-
-  // window.onscroll = calcScrollValue;
-  // window.onload = calcScrollValue;
   return (
     <>
       <div className="parent">
@@ -55,6 +36,38 @@ function MoviesList() {
               <div className="navbar__item" id="navbarItemOne">
                 <div className="navbar__item__logo">
                   <LogoSvg />
+  const navigate = useNavigate() 
+  return (
+    <>
+      <div className='parent'>
+          <div className='navbarInMainScreen'>
+              <div className='container'>
+                <div className='navbar__itemsMain'>
+                  <div className='navbar__item' id='navbarItemOne'>
+                    <div className='navbar__item__logo'>
+                        <LogoSvg/>                  
+                    </div>
+                    <div className='navbar__item__nav'>
+                      <ul className='navigation'>
+                        <li onClick={() => {navigate("/main")}}>Home</li>
+                        <li onClick={() => {navigate("/films")}}>Movies</li>
+                        <li onClick={() => {navigate("/payment")}}>Subscribe</li>
+                        <li>Contact</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className='navbar__itemMainScreen'>
+                    <input type='text' className='searchInput' placeholder='Search'/>
+                    { isUserHave ? <>
+                      <button className='signIn' onClick={() => navigate("/signin")}>Sign In</button>
+                      <button className='signUp' onClick={() => navigate("/signin")}>Sign Up</button>
+                    </> : <Button variant='contained' style={{marginLeft: '23px'}} color='error' onClick={() => {
+                      signOut(auth)
+                      setUserHave(!isUserHave)
+                      navigate("/signin")
+                    }}>Sign Out</Button> }
+                    <div className='account'></div>
+                  </div>
                 </div>
                 <div className="navbar__item__nav">
                   <ul className="navigation">
@@ -95,7 +108,7 @@ function MoviesList() {
         </div>
         <div className="container">
           <div className="blockTitles">
-            <span>Welcome 'guest'</span>
+            <span>Welcome '{user?.displayName}'</span>
           </div>
           <div className="blockFilm">
             <img
@@ -177,51 +190,60 @@ function MoviesList() {
             <div>
               <Marquee pauseOnHover={true} className="marqueeBlock">
                 {movies.map((item) => (
-                  <div className="stabilzBlock">
-                    <img
-                      src={item.posterIMAGE}
-                      alt="imageposter"
-                      className="stabilz"
-                    />
+                  <div className='cards'>
+                    <img src={item.posterIMAGE} onClick={() => {navigate(`/detail/${item.id}`)}} className='mainMoviesIMG' />
+                    <span className='cards__title'>{item.title}.</span>
+                    <div className='subscribe' onClick={() => {navigate(`/detail/${item.id}`)}}>More...</div>
                   </div>
                 ))}
-              </Marquee>
-            </div>
-          </div>
-          <div className="blockTopDayFilm">
-            {/* <img src={require("../static/994c82913bb3e6e493fac772f42ceb96--mia-wallace-quentin-tarantino.jpg")} className='topFilmToday'/> */}
-            <video
-              className="topFilmToday"
-              autoPlay
-              muted
-              loop
-              preload={require("../static/video/Pulp_Fiction___Official_Trailer_HD_John_Travolta,_Uma_Thurman,_Samuel.mp4")}
-            >
-              <source
-                src={require("../static/video/Pulp_Fiction___Official_Trailer_HD_John_Travolta,_Uma_Thurman,_Samuel.mp4")}
-              ></source>
-              Video not found
-            </video>
-            <div className="blackShadow2">
-              <h1 className="blackShadow2Title">КРИМИНАЛЬНОЕ ЧТИВО</h1>
-              <p className="blackShadow2Text">
-                <StarSVG className="star" /> 8,6 | 1994 | 2 ч 34 мин
-              </p>
-              <p className="blackShadow2PodText">
-                США | Триллер, комедия | 18+
-              </p>
-              <button className="blackShadow2Button">Full HD</button>
-              <div className="blackShadow2ButtonGroup">
-                <button className="SubscribeButton">
-                  Смотреть по подписке
-                </button>
-                <button className="TrailerButton">Трейлер</button>
+                <div className='blackShadowInFilms'></div>
               </div>
-              <p className="blackShadow2Description">
-                Несколько связанных историй из жизни бандитов, <br /> Шедевр
-                Квентина Тарантино, который изменил <br /> мировое кино.
-              </p>
+              <div className='d-f'>
+                <Button onClick={() => navigate("/films")} variant='contained' color='info'>More films</Button>
+              </div>
             </div>
+            <div>
+                <div className='marqueeTitle'>Premier films</div>
+                <div>
+                  <Marquee pauseOnHover={true} className='marqueeBlock'>
+                    {movies.map((item) => (
+                      <div className='stabilzBlock'>
+                        <img onClick={() => {navigate(`/detail/${item.id}`)}} src={item.posterIMAGE} className='stabilz' />
+                      </div>
+                    ))}
+                  </Marquee>
+                </div>
+                <div className='blackShadowInFilms2'></div>
+                <div className='blackShadowInFilms3'></div>
+            </div>
+            <div className='blockTopDayFilm'>
+              {/* <img src={require("../static/994c82913bb3e6e493fac772f42ceb96--mia-wallace-quentin-tarantino.jpg")} className='topFilmToday'/> */}
+              <video className='topFilmToday' autoPlay muted loop preload={require("../static/video/Pulp_Fiction___Official_Trailer_HD_John_Travolta,_Uma_Thurman,_Samuel.mp4")}>
+                      <source src={require("../static/video/Pulp_Fiction___Official_Trailer_HD_John_Travolta,_Uma_Thurman,_Samuel.mp4")}></source>
+                      Video not found
+              </video>
+              <div className='blackShadow2'>
+                <h1 className='blackShadow2Title'>КРИМИНАЛЬНОЕ ЧТИВО</h1>
+                <p className='blackShadow2Text'><StarSVG className='star'/>  8,6 | 1994 | 2 ч 34 мин</p>
+                <p className='blackShadow2PodText'>США | Триллер, комедия | 18+</p>
+                <button className='blackShadow2Button'>Full HD</button>
+                <div className='blackShadow2ButtonGroup'>
+                      <button className='SubscribeButton' onClick={() => {navigate(`/detail/${movies[5].id}`)}}>Смотреть по подписке</button>
+                      <button className='TrailerButton'>Трейлер</button>
+                </div>
+                <p className='blackShadow2Description'>
+                  Несколько связанных историй из жизни бандитов, <br/> Шедевр Квентина Тарантино, который изменил <br/> мировое кино.
+                </p>
+              </div>
+            </div>
+            <div className='blockOscarsFilm'>
+                Oscar films
+                <MySlider/>
+            </div>
+            <div className='blockFAQ'>
+                <div className='blurBlock'>
+                  <h1 className='link'>Ссылка на покупку <a className='payment' href='/payment'>подписки</a></h1>
+                </div>            </div>
           </div>
           <div className="blockOscarsFilm">
             Oscar films
