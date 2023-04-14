@@ -10,6 +10,7 @@ import FilmsList from "../pages/FilmsList";
 import HomePage from "../pages/HomePage";
 import HowToPay from "../pages/HowToPay";
 import MainScreen from "../pages/MainScreen";
+import MoviesPagesFooter from "../pages/MoviesPagesFooter";
 import PaymentSuccess from "../pages/PaymentSuccess";
 import SignPage from "../pages/SignPage";
   
@@ -30,6 +31,7 @@ function MainRoutes() {
       </Route>
       <Route path="/add" element={<AddPost/>}></Route>
       <Route path="/edit/:id" element={<EditReview/>}></Route>
+      <Route path="/test" element={<MoviesPagesFooter/>}></Route>
     </Routes>
   );
 }

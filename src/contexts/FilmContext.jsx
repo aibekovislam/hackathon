@@ -80,6 +80,16 @@ function FilmContext({ children }) {
     }
   }
 
+  async function addComment(id, newFilm) {
+    try {
+        await axios.patch(`${API}/${id}`, newFilm);
+        // data.comments.push(newComment)
+        getMovies();
+    } catch (error) {
+        console.log(error)
+    }
+  }
+
   const value = {
     movies: state.movies,
     getMovies,
@@ -87,7 +97,8 @@ function FilmContext({ children }) {
     oneFilm: state.oneFilm,
     addReview,
     deleteReview,
-    editReview
+    editReview,
+    addComment
   }
 
 

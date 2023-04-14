@@ -51,9 +51,9 @@ function AddPost() {
                     </div>
                     <div className='navbar__item__nav'>
                       <ul className='navigation'>
-                        <li>Home</li>
-                        <li>Movies</li>
-                        <li>About</li>
+                        <li onClick={() => {navigate("/main")}}>Home</li>
+                        <li onClick={() => {navigate("/films")}}>Movies</li>
+                        <li onClick={() => {navigate("/payment")}}>Subscribe</li>
                         <li>Contact</li>
                       </ul>
                     </div>
@@ -74,21 +74,16 @@ function AddPost() {
               </div>
           </div>
           <div className='container'>
-            <div className='blockTitles2'>
-                <span>Add your film</span>
-            </div>
+            <div className='d-fIn2'>
             <div className='mainMovies'>
+              {/* <div className='blockTitles2'>
+                  <span>Add your film</span>
+              </div> */}
+                <h1 className='title'>Add your film</h1>
                 <div className='mainMoviesList'>
-                    {/* {movies.map((item) => (
-                    <div className='cards' key={item.id}>
-                        <img src={item.posterIMAGE} className='mainMoviesIMG' />
-                        <span className='cards__title'>{item.title}.</span>
-                        <div className='subscribe'>Подписка</div>
-                    </div>
-                    ))} */}
                     <div className='AddBlock'>
                         <div className='add__input'>
-                            <form onSubmit={(e) => handleSubmit(e)}>
+                            <form className='d-fIn' onSubmit={(e) => handleSubmit(e)}>
                                 <input onChange={(e) => handleChange(e)} type='text' value={formValue.title} className='input' name='title' placeholder='Название фильма'/>
                                 <input onChange={(e) => handleChange(e)} type='text' value={formValue.background} className='input' name='background' placeholder='Картинка фильма'/>
                                 <input onChange={(e) => handleChange(e)} type='text' value={formValue.text} className='input' name='text' placeholder='Текста фильма'/>
@@ -99,6 +94,7 @@ function AddPost() {
                                     <Select
                                     labelId="demo-simple-select-label"
                                     id="demo-simple-select"
+                                    sx={{ backgroundColor: 'white' }}
                                     value={formValue.category}
                                     label="Category"
                                     name="category"
@@ -113,11 +109,12 @@ function AddPost() {
                                     <MenuItem value={"comedy"}>Comedy</MenuItem>
                                     </Select>
                                 </FormControl>
-                                <Button type='submit' variant='text' color='info'>POST</Button>
+                                <Button type='submit' variant='contained' color='info'>POST</Button>
                             </form>
                         </div>
                     </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>

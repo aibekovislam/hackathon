@@ -1,4 +1,5 @@
 import React from 'react'
+import MovieListMobile from '../components/MovieListMobile'
 import MoviesList from '../components/MoviesList'
 
 function MainScreen() {
@@ -8,7 +9,7 @@ function MainScreen() {
             <MoviesList/>
         </div>
         <div className='mobile'>
-            <h1>Hello mobile</h1>
+            <MovieListMobile/>
         </div>
     </>
   )
