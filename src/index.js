@@ -5,6 +5,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { ProSidebarProvider } from 'react-pro-sidebar';
 import FilmContext from './contexts/FilmContext';
 import AuthContext from './contexts/AuthContext';
+import CartContext from "./contexts/CartContext";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -13,7 +15,9 @@ root.render(
     <ProSidebarProvider>
       <FilmContext>
         <AuthContext>
-          <App/>
+          <CartContext>
+            <App />
+          </CartContext>
         </AuthContext>
       </FilmContext>
     </ProSidebarProvider>

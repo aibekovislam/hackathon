@@ -13,7 +13,8 @@ import MainScreen from "../pages/MainScreen";
 import MoviesPagesFooter from "../pages/MoviesPagesFooter";
 import PaymentSuccess from "../pages/PaymentSuccess";
 import SignPage from "../pages/SignPage";
-  
+import CartPage from "../pages/CartPage";
+
 function MainRoutes() {
   return (
     <Routes>
@@ -28,6 +29,7 @@ function MainRoutes() {
       <Route element={<PaymentLayout />}>
         <Route path="payment" element={<HowToPay />}></Route>
         <Route path="success" element={<PaymentSuccess />}></Route>
+        <Route path="/cart" element={<CartPage />} />
       </Route>
       <Route path="/add" element={<AddPost/>}></Route>
       <Route path="/edit/:id" element={<EditReview/>}></Route>

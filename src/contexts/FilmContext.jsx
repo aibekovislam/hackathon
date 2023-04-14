@@ -4,9 +4,8 @@ import { ACTIONS, API, LIMIT } from '../utils/consts';
 
 const filmContext = createContext();
 
-
 export function useFilmContext() {
-    return useContext(filmContext);
+  return useContext(filmContext);
 }
 
 const initState = {
@@ -36,7 +35,7 @@ function FilmContext({ children }) {
             payload: res.data
         })
     } catch (error) {
-        console.log(error)
+      console.log(error);
     }
   }
 
@@ -101,8 +100,7 @@ function FilmContext({ children }) {
     addComment
   }
 
-
-  return <filmContext.Provider value={value} >{ children }</filmContext.Provider>
+  return <filmContext.Provider value={value}>{children}</filmContext.Provider>;
 }
 
-export default FilmContext
+export default FilmContext;
