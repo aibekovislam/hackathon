@@ -32,9 +32,9 @@ function MoviesList() {
                     </div>
                     <div className='navbar__item__nav'>
                       <ul className='navigation'>
-                        <li>Home</li>
-                        <li>Movies</li>
-                        <li>About</li>
+                        <li onClick={() => {navigate("/main")}}>Home</li>
+                        <li onClick={() => {navigate("/films")}}>Movies</li>
+                        <li onClick={() => {navigate("/payment")}}>Subscribe</li>
                         <li>Contact</li>
                       </ul>
                     </div>
@@ -82,11 +82,12 @@ function MoviesList() {
               <div className='mainMoviesList'>
                 {movies.map((item) => (
                   <div className='cards'>
-                    <img src={item.posterIMAGE} className='mainMoviesIMG' />
+                    <img src={item.posterIMAGE} onClick={() => {navigate(`/detail/${item.id}`)}} className='mainMoviesIMG' />
                     <span className='cards__title'>{item.title}.</span>
-                    <div className='subscribe'>Подписка</div>
+                    <div className='subscribe' onClick={() => {navigate(`/detail/${item.id}`)}}>More...</div>
                   </div>
                 ))}
+                <div className='blackShadowInFilms'></div>
               </div>
               <div className='d-f'>
                 <Button onClick={() => navigate("/films")} variant='contained' color='info'>More films</Button>
@@ -98,11 +99,13 @@ function MoviesList() {
                   <Marquee pauseOnHover={true} className='marqueeBlock'>
                     {movies.map((item) => (
                       <div className='stabilzBlock'>
-                        <img src={item.posterIMAGE} className='stabilz' />
+                        <img onClick={() => {navigate(`/detail/${item.id}`)}} src={item.posterIMAGE} className='stabilz' />
                       </div>
                     ))}
                   </Marquee>
                 </div>
+                <div className='blackShadowInFilms2'></div>
+                <div className='blackShadowInFilms3'></div>
             </div>
             <div className='blockTopDayFilm'>
               {/* <img src={require("../static/994c82913bb3e6e493fac772f42ceb96--mia-wallace-quentin-tarantino.jpg")} className='topFilmToday'/> */}
@@ -116,7 +119,7 @@ function MoviesList() {
                 <p className='blackShadow2PodText'>США | Триллер, комедия | 18+</p>
                 <button className='blackShadow2Button'>Full HD</button>
                 <div className='blackShadow2ButtonGroup'>
-                      <button className='SubscribeButton'>Смотреть по подписке</button>
+                      <button className='SubscribeButton' onClick={() => {navigate(`/detail/${movies[5].id}`)}}>Смотреть по подписке</button>
                       <button className='TrailerButton'>Трейлер</button>
                 </div>
                 <p className='blackShadow2Description'>
@@ -129,7 +132,9 @@ function MoviesList() {
                 <MySlider/>
             </div>
             <div className='blockFAQ'>
-                <div className='blurBlock'></div>
+                <div className='blurBlock'>
+                  <h1 className='link'>Ссылка на покупку <a className='payment' href='/payment'>подписки</a></h1>
+                </div>
             </div>
           </div>
         </div>

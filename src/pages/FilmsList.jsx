@@ -95,9 +95,9 @@ function FilmsList() {
                     </div>
                     <div className='navbar__item__nav'>
                       <ul className='navigation'>
-                        <li>Home</li>
-                        <li>Movies</li>
-                        <li>About</li>
+                        <li onClick={() => {navigate("/main")}}>Home</li>
+                        <li onClick={() => {navigate("/films")}}>Movies</li>
+                        <li onClick={() => {navigate("/payment")}}>Subscribe</li>
                         <li>Contact</li>
                       </ul>
                     </div>
@@ -141,10 +141,10 @@ function FilmsList() {
                 </select>
             </div>
             <div className='mainMovies'>
-                <div className='mainMoviesList'>
+                <div className='mainMoviesList2'>
                     {movies.map((item) => (
                     <div className='cards' key={item.id}>
-                        <img src={item.posterIMAGE} className='mainMoviesIMG' />
+                        <img src={item.posterIMAGE} onClick={() => {navigate(`/detail/${item.id}`)}} className='mainMoviesIMG' />
                         <span className='cards__title'>{item.title}.</span>
                         <div className='subscribe'>Подписка</div>
                     </div>
