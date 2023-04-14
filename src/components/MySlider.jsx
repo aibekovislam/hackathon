@@ -23,7 +23,7 @@ function MySlider() {
     <Slider {...settings}>
         {movies.map((item) => (
             <div className='oscarFilms' key={item.id}>
-                <img src={item.posterIMAGE} className='imgFluid'/>
+                <img src={item.posterIMAGE} alt="img" className='imgFluid'/>
                 {/* <div className='blackShadow3'>
                     <div className='blackShadow3Title'>{item.title}</div>
                     <div></div>

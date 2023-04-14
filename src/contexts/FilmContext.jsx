@@ -1,25 +1,24 @@
-import axios from 'axios';
-import React, { createContext, useContext, useReducer } from 'react';
-import { ACTIONS, API } from '../utils/consts';
+import axios from "axios";
+import React, { createContext, useContext, useReducer } from "react";
+import { ACTIONS, API } from "../utils/consts";
 
 const filmContext = createContext();
 
-
 export function useFilmContext() {
-    return useContext(filmContext);
+  return useContext(filmContext);
 }
 
 const initState = {
-    movies: []
-}
+  movies: [],
+};
 
 function reducer(state, action) {
-    switch (action.type) {
-        case ACTIONS.movies:
-            return {...state, movies: action.payload}
-        default:
-            return state
-    }
+  switch (action.type) {
+    case ACTIONS.movies:
+      return { ...state, movies: action.payload };
+    default:
+      return state;
+  }
 }
 
 function FilmContext({ children }) {
@@ -27,24 +26,23 @@ function FilmContext({ children }) {
 
   async function getMovies() {
     try {
-        const res = await axios.get(API);
-        console.log(res);
-        dispatch({
-            type: ACTIONS.movies,
-            payload: res.data
-        })
+      const res = await axios.get(API);
+      console.log(res);
+      dispatch({
+        type: ACTIONS.movies,
+        payload: res.data,
+      });
     } catch (error) {
-        console.log(error)
+      console.log(error);
     }
   }
 
   const value = {
     movies: state.movies,
-    getMovies
-  }
+    getMovies,
+  };
 
-
-  return <filmContext.Provider value={value} >{ children }</filmContext.Provider>
+  return <filmContext.Provider value={value}>{children}</filmContext.Provider>;
 }
 
-export default FilmContext
+export default FilmContext;

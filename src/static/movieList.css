@@ -1,467 +1,524 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-*{
-    font-family: 'Roboto', sans-serif;
-}
-
-.parent{
-    background-color: rgb(6, 9, 22);
-    padding-bottom: 30px;
+* {
+  font-family: "Roboto", sans-serif;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.navbar__itemsMain{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 0;
-}
-.navbar__item{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.parent {
+  background-color: rgb(6, 9, 22);
+  padding-bottom: 30px;
 }
 
-#navbarItemOne{
-    width: 700px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navbar__itemsMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+.navbar__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar__item__nav{
-    width: 500px;
+#navbarItemOne {
+  width: 700px;
 }
 
-.navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar__item__nav {
+  width: 500px;
 }
 
-.navigation li{
-    list-style-type: none;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbarInMainScreen{
-    background-color: rgb(6, 8, 17);
-    /* background-color: transparent; */
-    padding: 20px;
-}
-.searchInput{
-    padding-left: 10px;
-    width: 200px;
-    height: 40px;
-    border-radius: 8px;
-    border: none;
-    color: white;
-    background-color: rgb(15, 22, 53);
-}
-.searchInput:focus{
-    outline: none;
-}
-.backgroundImageInMainScreen{
-    background-color: rgb(7, 10, 23);
-
-    width: 100%;
-    height: 500px;
+.navigation li {
+  list-style-type: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
 
-.signIn{
-    padding: 10px 30px 10px 30px;
-    margin-left: 10px;
-    border-radius: 8px;
-    border: none;
-    background-color: initial;
-    color: white;
-    font-weight: 700;
+.navbarInMainScreen {
+  background-color: rgb(6, 8, 17);
+  /* background-color: transparent; */
+  padding: 20px;
 }
-.signUp{
-    padding: 10px 30px 10px 30px;
-    margin-left: 10px;
-    border-radius: 8px;
-    background-color: initial;
-    color: white;
-    font-weight: 700;
-    border: 3px solid white;
+.searchInput {
+  padding-left: 10px;
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: rgb(15, 22, 53);
 }
+.searchInput:focus {
+  outline: none;
+}
+.backgroundImageInMainScreen {
+  background-color: rgb(7, 10, 23);
 
-.blockTitles{
-    margin-top: 33px;
-    margin-bottom: 23px;
-}
-
-.blockTitles span{
-    color: white;
-    font-size: 33px;
-    font-weight: normal;
-    font-family: 'Bebas Neue', cursive;
+  width: 100%;
+  height: 500px;
 }
 
-.blockFilm{
-    width: 100%;
-    height: 600px;
-    background-color: white;
-    border-radius: 9px;
-    position: relative;
+.signIn {
+  padding: 10px 30px 10px 30px;
+  margin-left: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: initial;
+  color: white;
+  font-weight: 700;
 }
-.blockFilm img{
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    border-radius: 8px;
-    object-fit: cover;
-    overflow: hidden;
-}
-.blackShadow{
-    position: absolute;
-    bottom: 0;
-    background: linear-gradient(180deg,transparent,black);
-    width: 100%;
-    height: 250px;
-    border-radius: 8px;
+.signUp {
+  padding: 10px 30px 10px 30px;
+  margin-left: 10px;
+  border-radius: 8px;
+  background-color: initial;
+  color: white;
+  font-weight: 700;
+  border: 3px solid white;
 }
 
-.blackShadow3{
-    position: absolute;
-    bottom: 0;
-    background: linear-gradient(180deg,transparent,black);
-    /* background: linear-gradient(180deg, transparent, #FDD835); */
-    width: 700px;
-    height: 250px;
-    border-radius: 8px;
+.blockTitles {
+  margin-top: 33px;
+  margin-bottom: 23px;
 }
 
-.blackShadowTitle{
-    color: white;
-    padding-left: 100px;
-    padding-top: 50px;
-    font-size: 80px;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 3px;
-    position: relative;
-    bottom: 80px;
-}
-.blackShadow3Title{
-    color: white;
-    /* background: linear-gradient(90deg, #FDD835, #FF5722, #4CAF50, #03A9F4, #9C27B0); */
-    /* -webkit-background-clip: text; */
-    /* -moz-background-clip: text; */
-    /* background-clip: text; */
-    /* color: transparent; */
-    padding-left: 100px;
-    padding-top: 100px;
-    font-size: 80px;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 3px;
-    position: relative;
-    bottom: 0px;
-}
-.blackShadowText{
-    position: relative;
-    color: white;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 10px;
-    font-size: 20px;
-    bottom: 100px;
+.blockTitles span {
+  color: white;
+  font-size: 33px;
+  font-weight: normal;
+  font-family: "Bebas Neue", cursive;
 }
 
-.blockFilter{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.blockFilm {
+  width: 100%;
+  height: 600px;
+  background-color: white;
+  border-radius: 9px;
+  position: relative;
+}
+.blockFilm img {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  border-radius: 8px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.blackShadow {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent, black);
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
 }
 
-.blockFilter__items{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
-.blockFilter__items button{
-    padding: 48px 35px 48px 35px;
-    background: #171925;
-    border: none;
-    color: white;
-    border-radius: 8px;
-    font-weight: 500;
+.blackShadow3 {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent, black);
+  /* background: linear-gradient(180deg, transparent, #FDD835); */
+  width: 700px;
+  height: 250px;
+  border-radius: 8px;
 }
 
-.mainMoviesTitle{
-    font-size: 33px;
-    color: white;
-    margin-bottom: 30px;
-    font-family: 'Bebas Neue', cursive;
+.blackShadowTitle {
+  color: white;
+  padding-left: 100px;
+  padding-top: 50px;
+  font-size: 80px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  position: relative;
+  bottom: 80px;
 }
-.mainMoviesList{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    row-gap: 30px;
+.blackShadow3Title {
+  color: white;
+  /* background: linear-gradient(90deg, #FDD835, #FF5722, #4CAF50, #03A9F4, #9C27B0); */
+  /* -webkit-background-clip: text; */
+  /* -moz-background-clip: text; */
+  /* background-clip: text; */
+  /* color: transparent; */
+  padding-left: 100px;
+  padding-top: 100px;
+  font-size: 80px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  position: relative;
+  bottom: 0px;
 }
-
-.cards{
-    width: 200px;
-    height: 250px;
-    border-radius: 8px;
-    margin-right: 13px;
-    margin-bottom: 190px;
-}
-
-.mainMoviesIMG{
-    width: 200px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.cards__title{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color: white;
-    font-weight: normal;
-}
-.subscribe{
-    margin-top: 10px;
-    color: #01FFFF;
+.blackShadowText {
+  position: relative;
+  color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  font-size: 20px;
+  bottom: 100px;
 }
 
-
-
-
-
-.stabilzBlock{
-    width: 200px;
-    height: 300px;
-    margin: 0px 30px;
-    border-radius: 8px;
+.blockFilter {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-
-.stabilz{
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition-duration: 0.3s;
-    /* padding-right: 23px; */
+.blockFilter__items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
-.stabilz:hover{
-    background: #171925;
-    opacity: 0.5;
-    color: white;
-}
-
-.marqueeBlock{
-    background: transparent;
-    height: 350px;
-    border-radius: 32px;
+.blockFilter__items button {
+  padding: 48px 35px 48px 35px;
+  background: #171925;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-weight: 500;
 }
 
-.overlay{
-    --gradient-color: none !important;
+.mainMoviesTitle {
+  font-size: 33px;
+  color: white;
+  margin-bottom: 30px;
+  font-family: "Bebas Neue", cursive;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.mainMoviesList {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
 }
 
-.marqueeTitle{
-    text-align: center;
-    font-size: 43px;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
+.cards {
+  width: 200px;
+  height: 250px;
+  border-radius: 8px;
+  margin-right: 13px;
+  margin-bottom: 190px;
 }
 
+.mainMoviesIMG {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
 
+.cards__title {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: white;
+  font-weight: normal;
+}
+.subscribe {
+  margin-top: 10px;
+  color: #01ffff;
+}
 
+.stabilzBlock {
+  width: 200px;
+  height: 300px;
+  margin: 0px 30px;
+  border-radius: 8px;
+}
 
+.stabilz {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition-duration: 0.3s;
+  /* padding-right: 23px; */
+}
+.stabilz:hover {
+  background: #171925;
+  opacity: 0.5;
+  color: white;
+}
 
+.marqueeBlock {
+  background: transparent;
+  height: 350px;
+  border-radius: 32px;
+}
+
+.overlay {
+  --gradient-color: none !important;
+}
+
+.marqueeTitle {
+  text-align: center;
+  font-size: 43px;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+}
 
 .gradient-animation {
-    background: linear-gradient(-45deg, #ff3a3a, #ff893a, #ffda3a, #9cff3a, #3affa5, #3a80ff, #913aff, #ff3a8c);
-    background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+  background: linear-gradient(
+    -45deg,
+    #ff3a3a,
+    #ff893a,
+    #ffda3a,
+    #9cff3a,
+    #3affa5,
+    #3a80ff,
+    #913aff,
+    #ff3a8c
+  );
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
   }
-  
-
-
-.blockTopDayFilm{
-    width: 100%;
-    height: 550px;
-    background-color: #3a80ff;
-    margin-top: 33px;
-    border-radius: 8px;
-    position: relative;
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.blackShadow2{
-    position: absolute;
-    bottom: 0;
-    background: linear-gradient(270deg,transparent,black);
-    width: 1000px;
-    height: 100%;
-    border-radius: 8px;
+.blockTopDayFilm {
+  width: 100%;
+  height: 550px;
+  background-color: #3a80ff;
+  margin-top: 33px;
+  border-radius: 8px;
+  position: relative;
 }
 
-.blackShadow2Title{
-    color: white;
-    position: relative;
-    left: 70px;
-    top: 100px;
-    font-size: 50px;
-}
-.blackShadow2Text{
-    position: relative;
-    color: white;
-    left: 70px;
-    top: 100px;
-    padding-top: 33px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    letter-spacing: 1.5px;
+.blackShadow2 {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(270deg, transparent, black);
+  width: 1000px;
+  height: 100%;
+  border-radius: 8px;
 }
 
-.blackShadow2PodText{
-    position: relative;
-    color: white;
-    left: 70px;
-    top: 100px;
-    padding-top: 15px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    letter-spacing: 1.5px;
+.blackShadow2Title {
+  color: white;
+  position: relative;
+  left: 70px;
+  top: 100px;
+  font-size: 50px;
+}
+.blackShadow2Text {
+  position: relative;
+  color: white;
+  left: 70px;
+  top: 100px;
+  padding-top: 33px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  letter-spacing: 1.5px;
 }
 
-.blackShadow2Button{
-    position: relative;
-    color: white;
-    left: 70px;
-    top: 100px;
-    margin-top: 25px;
-    font-size: 17px;
-    background-image: linear-gradient(to right, #171925 0%, black 100%);
-    border: none;
-    padding: 10px 20px 10px 20px;
-    border-radius: 80px;
+.blackShadow2PodText {
+  position: relative;
+  color: white;
+  left: 70px;
+  top: 100px;
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  letter-spacing: 1.5px;
 }
 
-
-.SubscribeButton{
-    position: relative;
-    color: white;
-    left: 70px;
-    top: 100px;
-    margin-top: 15px;
-    font-size: 17px;
-    background-color:  #FF3BB2;
-    box-shadow: 1px 6px 53px 0px rgba(255,58,140,0.75);
-    -webkit-box-shadow: 1px 6px 53px 0px rgba(255,58,140,0.75);
-    -moz-box-shadow: 1px 6px 53px 0px rgba(255,58,140,0.75);
-    border: none;
-    padding: 10px 30px 10px 30px;
-    border-radius: 80px;
+.blackShadow2Button {
+  position: relative;
+  color: white;
+  left: 70px;
+  top: 100px;
+  margin-top: 25px;
+  font-size: 17px;
+  background-image: linear-gradient(to right, #171925 0%, black 100%);
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 80px;
 }
 
-.TrailerButton{
-    position: relative;
-    color: white;
-    left: 70px;
-    top: 100px;
-    margin-top: 15px;
-    font-size: 17px;
-    /* background: #171925, linear-gradient(60deg, #FF3BB2, #01FFFF) border-box; */
-    background: 
-        linear-gradient(#171925, #171925) padding-box,
-        linear-gradient(60deg, #FF3BB2, #01FFFF) border-box;
-    border: 1px solid transparent;
-    padding: 10px 30px 10px 30px;
-    border-radius: 80px;
-    margin-left: 15px;
+.SubscribeButton {
+  position: relative;
+  color: white;
+  left: 70px;
+  top: 100px;
+  margin-top: 15px;
+  font-size: 17px;
+  background-color: #ff3bb2;
+  box-shadow: 1px 6px 53px 0px rgba(255, 58, 140, 0.75);
+  -webkit-box-shadow: 1px 6px 53px 0px rgba(255, 58, 140, 0.75);
+  -moz-box-shadow: 1px 6px 53px 0px rgba(255, 58, 140, 0.75);
+  border: none;
+  padding: 10px 30px 10px 30px;
+  border-radius: 80px;
+}
+
+.TrailerButton {
+  position: relative;
+  color: white;
+  left: 70px;
+  top: 100px;
+  margin-top: 15px;
+  font-size: 17px;
+  /* background: #171925, linear-gradient(60deg, #FF3BB2, #01FFFF) border-box; */
+  background: linear-gradient(#171925, #171925) padding-box,
+    linear-gradient(60deg, #ff3bb2, #01ffff) border-box;
+  border: 1px solid transparent;
+  padding: 10px 30px 10px 30px;
+  border-radius: 80px;
+  margin-left: 15px;
 }
 
 .blackShadow2Description {
-    position: relative;
-    color: white;
-    left: 70px;
-    top: 100px;
-    margin-top: 35px;
-    line-height: 27px;
-    font-size: 17px;
+  position: relative;
+  color: white;
+  left: 70px;
+  top: 100px;
+  margin-top: 35px;
+  line-height: 27px;
+  font-size: 17px;
 }
 
-.star{
-    width: 15px;
-    height: 15px;
-    margin-right: 15px;
+.star {
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
 }
 
-
-.topFilmToday{
-    width: 100%;
-    height: 550px;
-    object-fit: cover;
-    border-radius: 8px;
+.topFilmToday {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-.blockOscarsFilm{
-    margin-top: 75px;
-    margin-bottom: 25px;
-    font-size: 37px;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
+.blockOscarsFilm {
+  margin-top: 75px;
+  margin-bottom: 25px;
+  font-size: 37px;
+  color: white;
+  font-family: "Bebas Neue", cursive;
 }
 
-.oscarFilms{
-    margin-top: 20px;
-    width: 290px !important;
-    height: 400px;
-    background:
-        linear-gradient(#ccc 0 0) padding-box, 
-        linear-gradient(90deg,#F0B800, #FDD835) border-box;
-    border: 3px solid transparent;
-    border-radius: 10px;
-    /* overflow: hidden; */
+.oscarFilms {
+  margin-top: 20px;
+  width: 290px !important;
+  height: 400px;
+  background: linear-gradient(#ccc 0 0) padding-box,
+    linear-gradient(90deg, #f0b800, #fdd835) border-box;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  /* overflow: hidden; */
 }
 
-
-.imgFluid{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
+.imgFluid {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 /* import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"; */
 
-.blockFAQ{
-    margin-top: 130px;
-    margin-bottom: 33px;
-    width: 100%;
-    height: 300px;
-    border-radius: 8px;
-    background: linear-gradient(273deg, #171925, #12afaf);
+.blockFAQ {
+  margin-top: 130px;
+  margin-bottom: 33px;
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  background: linear-gradient(273deg, #171925, #12afaf);
 }
 
-.blurBlock{
-    width: 100%;
-    height: 300px;
-    
+.blurBlock {
+  width: 100%;
+  height: 300px;
 }
+/* 
+#progress {
+  background-color: #03cc65;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer; 
+}
+#progress-value {
+    display: block;
+    height: calc(100% - 15%);
+    width: calc(100% - 15%);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+ */
+
+ #gradient-background {
+    height: 600px;
+     background: linear-gradient(62deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+       animation: gradient 15s ease infinite; 
+        background-size: 400% 400%;
+    
+  }
+  @-webkit-keyframes gradient{
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+       background-position: 0% 50%;
+    }
+  }
+  @keyframes gradient{
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+       background-position: 0% 50%;
+    }
+  }

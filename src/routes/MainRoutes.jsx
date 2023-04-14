@@ -8,7 +8,8 @@ import HowToPay from "../pages/HowToPay";
 import MainScreen from "../pages/MainScreen";
 import PaymentSuccess from "../pages/PaymentSuccess";
 import SignPage from "../pages/SignPage";
-  
+import CartPage from "../pages/CartPage";
+
 function MainRoutes() {
   return (
     <Routes>
@@ -21,6 +22,7 @@ function MainRoutes() {
       <Route element={<PaymentLayout />}>
         <Route path="payment" element={<HowToPay />}></Route>
         <Route path="success" element={<PaymentSuccess />}></Route>
+        <Route path="/cart" element={<CartPage />} />
       </Route>
     </Routes>
   );
